@@ -12,9 +12,10 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/build/assets/style.css') }}">
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss','resources/js/app.js'])
 </head>
 <body>
     <div id="app">
@@ -141,10 +142,12 @@
                     </div>
                 </nav>
             </div>
+            <div id="layoutSidenav_content">
+                <main class="py-4">
+                    @yield('content')
+                </main>        
+            </div>
         </div>
-        <main class="py-4">
-            @yield('content')
-        </main>
     </div>
 </body>
 </html>
