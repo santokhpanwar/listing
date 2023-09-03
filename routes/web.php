@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ListingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,9 +39,15 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
 All Admin Routes List
 --------------------------------------------
 --------------------------------------------*/
-Route::middleware(['auth', 'user-access:admin'])->group(function () {
-  
+Route::middleware(['auth', 'user-access:admin'])->group(function () {  
     Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
+    Route::get('/admin/listing', [ListingController::class, 'index'])->name('listing');
+    Route::get('/admin/listing/create', [ListingController::class, 'create']);
+    Route::post('/admin/listing', [ListingController::class, 'store']);
+    Route::get('/admin/listing/{id}/edit', [ListingController::class, 'edit']);
+    Route::get('/admin/listing/{id}', [ListingController::class, 'show']);
+    Route::put('/admin/listing/{id}', [ListingController::class, 'update']);
+    Route::delete('/admin/listing/{id}', [ListingController::class, 'destroy']);
 });
   
 /*------------------------------------------
