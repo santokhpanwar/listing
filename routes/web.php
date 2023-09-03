@@ -40,9 +40,9 @@ All Admin Routes List
 --------------------------------------------
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:admin'])->group(function () {  
-    Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
-    Route::get('/admin/listing', [ListingController::class, 'index'])->name('listing');
-    Route::get('/admin/listing/create', [ListingController::class, 'create']);
+    Route::get('/admin/dashboard', [HomeController::class, 'adminHome'])->name('admin.home');
+    Route::get('/admin/listing', [ListingController::class, 'index'])->name('admin.listing');
+    Route::get('/admin/listing/create', [ListingController::class, 'create'])->name('admin.create');
     Route::post('/admin/listing', [ListingController::class, 'store']);
     Route::get('/admin/listing/{id}/edit', [ListingController::class, 'edit']);
     Route::get('/admin/listing/{id}', [ListingController::class, 'show']);
