@@ -16,9 +16,12 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+
     <link rel="stylesheet" type="text/css" href="{{url('/assets/slick/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{url('/assets/slick/slick-theme.css')}}"/>
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -90,7 +93,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="{{url('/assets/slick/slick.min.js')}}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
     <script>
        $('.slider-nav').slick({
@@ -102,9 +106,47 @@
             focusOnSelect: true
         });
 
-        $(document).ready(function() {
-            $('.select-category').select2();
-        });
+       
+        // tinymce script init
+            tinymce.init({
+                selector: '#mytextarea'
+            });
+        // tinymce script init
+
+        //    days multiple select script
+            $(document).ready(function () {
+                $('#days-multiple').select2();
+            });
+
+            $(document).ready(function() {
+            $('#select-category').select2();
+        }); 
+        //    days multiple select script
+
+
+
+            // script for multi image uploader
+            const imageInput = document.getElementById('imageInput');
+                const imagePreview = document.getElementById('imagePreview');
+
+                imageInput.addEventListener('change', handleImageUpload);
+
+                function handleImageUpload() {
+                    imagePreview.innerHTML = ''; // Clear previous previews
+
+                    const files = imageInput.files;
+                    for (let i = 0; i < files.length; i++) {
+                        const file = files[i];
+                        if (file.type.startsWith('image/')) {
+                            const imageElement = document.createElement('img');
+                            imageElement.src = URL.createObjectURL(file);
+                            imageElement.classList.add('preview-image');
+                            imagePreview.appendChild(imageElement);
+                        }
+                    }
+                }
+            // script for multi image uploader
+
     </script>
 </body>
 </html>

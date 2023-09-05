@@ -1,21 +1,11 @@
 @extends('layouts.app')
  
 @section('content')
-<section class="grid-banner d-flex align-items-center">
-  <div class="container">
-    <h1 class="text-center text-white font-weight-bold">My Listing</h1>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb justify-content-center bg-transparent">
-        <li class="breadcrumb-item"><a class="text-warning" href="#">Home</a></li>
-        <li class="breadcrumb-item text-white">My Listing</li>
-      </ol>
-    </nav>
-  </div>
-</section>
+
 <section class="dashboard py-4">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-3 col-sm-12 mb-3">
                 <div class="card">
                      <div class="card-header  py-3 bg-white"> 
                         <h5 class="mb-0">My Dashboard</h5>
@@ -267,7 +257,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="center-block text-center mt-5">
+                            <div class="text-center mt-3">
                                 <div class="d-sm-flex">
                                     <h6 class="mb-4 mb-sm-0 mt-2">Showing <b>1 to 10</b> of 30 entries</h6>
                                     <ul class="pagination mb-0 ms-auto">

@@ -1,21 +1,11 @@
 @extends('layouts.app')
  
 @section('content')
-<section class="grid-banner d-flex align-items-center">
-  <div class="container">
-    <h1 class="text-center text-white font-weight-bold">Dashboard</h1>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb justify-content-center bg-transparent">
-        <li class="breadcrumb-item"><a class="text-warning" href="#">Home</a></li>
-        <li class="breadcrumb-item text-white">Dashboard</li>
-      </ol>
-    </nav>
-  </div>
-</section>
+
 <section class="dashboard py-4">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-3 col-sm-12 mb-3">
                 <div class="card">
                      <div class="card-header  py-3 bg-white"> 
                         <h5 class="mb-0">My Dashboard</h5>
@@ -72,9 +62,9 @@
             <div class="col-md-9 col-sm-12">
                 <div class="card">
                     <div class="card-header py-3 bg-white">
-                        <h5 class="mb-0">My Listings</h5>
+                        <h5 class="mb-0">My Dashboard</h5>
                     </div>
-                    <div class="card-body p-3 pb-0 bg-white rounded">
+                    <div class="card-body p-3  bg-white rounded">
                         <div class="mb-3">
                             <ul class="list-group list-group-horizontal flex-column flex-lg-row  justify-content-between">
                                 <li class="list-group-item w-100 d-flex align-items-center">
@@ -109,9 +99,51 @@
                                 
                             </ul> 
                         </div>
+
+
+                        <div class="row mb-3">
+                            <div class="col-md-4 mb-3">
+                                <div class="bg-success d-flex align-items-center py-4 justify-content-center shadow border rounded">
+                                    <div class="card-icon bg-light p-3 rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-briefcase" style="font-size:40px;"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                    <h6 class="text-warning h1">145</h6>
+                                    <span class="text-muted small pt-2 ps-1">No of Listing</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <div class="bg-primary d-flex align-items-center py-4 justify-content-center shadow border rounded">
+                                    <div class="card-icon bg-light p-3 rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-cart" style="font-size:40px;"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                    <h6 class="text-warning h1">145</h6>
+                                    <span class="text-muted small pt-2 ps-1">No of Listing</span>
+
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-4 mb-3">
+                                <div class="bg-warning d-flex align-items-center py-1 justify-content-center shadow border rounded">
+                                   <a href="{{url('/add-listing')}}" class="nav-link">
+                                   <div class="card-icon bg-light p-3 rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-file-plus" style="font-size:40px;"></i>
+                                    </div>
+                                    <p class="text-muted">Add Listing</p>
+                                   </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <h4>Latest Listing</h4>
+                        </div>
                         <div class="list-card card shadow mb-3 p-2 w-100">
                             <div class="row no-gutter align-items-center">
-                                <div class="col-md-4 d-flex align-items-stretch">                    
+                                <div class="col-md-4">                    
                                 <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
                                 </div>
                                 <div class="col-md-8">
@@ -127,13 +159,13 @@
                                             <span>(5.0)</span>
                                         </div> 
                                     <div class="list-location d-flex">
-                                        <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
+                                        <div class="mr-1"><i class="bi bi-geo-alt text-warning"></i> 2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
                                         
                                     </div>
                                     </div>
                                     <div class="row social-icon mt-2">
                                     <div class="col-md-8">
-                                    <div class="social-icon">
+                                    <div class="social-icon mb-md-0 mb-2 text-center text-md-start">
                                         <ul class="list-inline mb-0">
                                         <li class="list-inline-item">
                                             <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
@@ -153,7 +185,6 @@
                                     <div class="col-md-4 d-flex align-items-center justify-content-center">
                                         <div class="direction text-right">
                                         <a class="text-warning text-decoration-none" href="">
-                                            <!-- <img src="{{ url('assets/images/direction.png') }}" alt="">  -->
                                             View Details</a>
                                         </div>
                                     </div>
@@ -165,7 +196,7 @@
 
                         <div class="list-card card shadow mb-3 p-2 w-100">
                             <div class="row no-gutter align-items-center">
-                                <div class="col-md-4 d-flex align-items-stretch">                    
+                                <div class="col-md-4">                    
                                 <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
                                 </div>
                                 <div class="col-md-8">
@@ -181,13 +212,13 @@
                                             <span>(5.0)</span>
                                         </div> 
                                     <div class="list-location d-flex">
-                                        <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
+                                        <div class="mr-1"><i class="bi bi-geo-alt text-warning"></i> 2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
                                         
                                     </div>
                                     </div>
                                     <div class="row social-icon mt-2">
                                     <div class="col-md-8">
-                                    <div class="social-icon">
+                                    <div class="social-icon mb-md-0 mb-2 text-center text-md-start">
                                         <ul class="list-inline mb-0">
                                         <li class="list-inline-item">
                                             <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
@@ -207,7 +238,6 @@
                                     <div class="col-md-4 d-flex align-items-center justify-content-center">
                                         <div class="direction text-right">
                                         <a class="text-warning text-decoration-none" href="">
-                                            <!-- <img src="{{ url('assets/images/direction.png') }}" alt="">  -->
                                             View Details</a>
                                         </div>
                                     </div>
@@ -217,9 +247,10 @@
                             </div>
                         </div>
 
+
                         <div class="list-card card shadow mb-3 p-2 w-100">
                             <div class="row no-gutter align-items-center">
-                                <div class="col-md-4 d-flex align-items-stretch">                    
+                                <div class="col-md-4">                    
                                 <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
                                 </div>
                                 <div class="col-md-8">
@@ -235,13 +266,13 @@
                                             <span>(5.0)</span>
                                         </div> 
                                     <div class="list-location d-flex">
-                                        <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
+                                        <div class="mr-1"><i class="bi bi-geo-alt text-warning"></i> 2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
                                         
                                     </div>
                                     </div>
                                     <div class="row social-icon mt-2">
                                     <div class="col-md-8">
-                                    <div class="social-icon">
+                                    <div class="social-icon mb-md-0 mb-2 text-center text-md-start">
                                         <ul class="list-inline mb-0">
                                         <li class="list-inline-item">
                                             <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
@@ -261,7 +292,6 @@
                                     <div class="col-md-4 d-flex align-items-center justify-content-center">
                                         <div class="direction text-right">
                                         <a class="text-warning text-decoration-none" href="">
-                                            <!-- <img src="{{ url('assets/images/direction.png') }}" alt="">  -->
                                             View Details</a>
                                         </div>
                                     </div>
@@ -270,6 +300,11 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        
+
+                        
 
                     </div>
                 </div>

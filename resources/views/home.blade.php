@@ -30,7 +30,7 @@
   <div class="container">
     <div class="slider slider-nav">
       <div class="slider-item">
-        <a href="#">
+        <a href="{{url('/category')}}">
               <div class="category-item ">
                 <div class="category-img   rounded-circle mx-auto">
                   <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">

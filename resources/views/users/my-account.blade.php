@@ -1,21 +1,11 @@
 @extends('layouts.app')
  
 @section('content')
-<section class="grid-banner d-flex align-items-center">
-  <div class="container">
-    <h1 class="text-center text-white font-weight-bold">My Account</h1>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb justify-content-center bg-transparent">
-        <li class="breadcrumb-item"><a class="text-warning" href="#">Home</a></li>
-        <li class="breadcrumb-item text-white">My Account</li>
-      </ol>
-    </nav>
-  </div>
-</section>
+
 <section class="dashboard py-4">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-3 col-sm-12 mb-3">
                 <div class="card"> 
                      <div class="card-header  py-3 bg-white"> 
                         <h5 class="mb-0">My Dashboard</h5>
@@ -78,10 +68,10 @@
                         <div class="tabpannel">
                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item flex-fill text-center" role="presentation">
-                                    <a class="rounded-0 nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="a" role="tab" aria-controls="pills-home" aria-selected="true">Profile</a>
+                                    <a class="rounded-0 nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Profile</a>
                                 </li>
                                 <li class="nav-item flex-fill text-center" role="presentation">
-                                    <a class="rounded-0 nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="a" role="tab" aria-controls="pills-profile" aria-selected="false">Update Information</a>
+                                    <a class="rounded-0 nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Update Information</a>
                                 </li>
                                 <li class="nav-item flex-fill text-center" role="presentation">
                                     <a class="rounded-0 nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Change Password</a>
@@ -95,25 +85,25 @@
                                         <h3 class="card-title mb-3 font-weight-semibold">Personal Details</h3>
                                     </div>
                                     <ul class="usertab-list mb-0">
-                                        <li><a href="javascript:void(0)" class="text-dark"><span class="font-weight-semibold">Full Name :</span> Rubin Carmody</a></li>
-                                        <li><a href="javascript:void(0)" class="text-dark"><span class="font-weight-semibold">Location :</span> USA</a></li>
-                                        <li><a href="javascript:void(0)" class="text-dark"><span class="font-weight-semibold">Languages :</span> English, German, Spanish.</a></li>
-                                        <li><a href="javascript:void(0)" class="text-dark"><span class="font-weight-semibold">Website :</span>Bizness.com</a></li>
-                                        <li><a href="javascript:void(0)" class="text-dark"><span class="font-weight-semibold">Email :</span> georgemestayer@bizness.com</a></li>
-                                        <li><a href="javascript:void(0)" class="text-dark"><span class="font-weight-semibold">Phone :</span> +125 254 3562 </a></li>
+                                        <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Location :</span> USA</a></li>
+                                        <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Full Name :</span> Rubin Carmody</a></li>
+                                        <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Languages :</span> English, German, Spanish.</a></li>
+                                        <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Website :</span>Bizness.com</a></li>
+                                        <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Email :</span> georgemestayer@bizness.com</a></li>
+                                        <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Phone :</span> +125 254 3562 </a></li>
                                     </ul>
-                                    <div class="mt-5 profie-img">
+                                    <div class="mt-5 d-inline-block">
                                         <div class="">
                                             <div class="media-heading">
                                                 <h3 class="card-title mb-3 font-weight-semibold">Biography</h3>
                                             </div>
                                             <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus how to pursue pleasure rationally encounter but because those who do not know how to pursue consequences that are extremely</p>
-                                            <p class="mb-0">because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter but because those who do not know how to pursue consequences the extre painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
                                         </div>
                                     </div>
                                     </div>
                             </div>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                <form action="">
                                 <div class="row" data-select2-id="select2-data-12-eoy6"> 
                                     <div class="col-sm-6 col-md-6"> <div class="form-group"> 
                                         <label class="form-label">First Name</label> 
@@ -211,6 +201,7 @@
                                                 <button type="submit" class="px-3 py-2 rounded bg-warning border-0 text-white float-end">Update Profile</button>
                                             </div>
                                         </div>
+                                            </form>
                                         
                             </div>
                             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
