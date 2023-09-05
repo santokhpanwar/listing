@@ -17,12 +17,12 @@ use App\Http\Controllers\ListingController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /*------------------------------------------
 --------------------------------------------
@@ -31,7 +31,14 @@ All Normal Users Routes List
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:user'])->group(function () {
   
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/category', [HomeController::class, 'category'])->name('category');
+    Route::get('/single-category', [HomeController::class, 'single_category'])->name('single-category');
+    Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+    Route::get('/my-account', [HomeController::class, 'my_account'])->name('my-account');
+    Route::get('/my-listing', [HomeController::class, 'my_listing'])->name('my-listing');
+    Route::get('/add-listing', [HomeController::class, 'add_listing'])->name('add-listing');
+
 });
   
 /*------------------------------------------

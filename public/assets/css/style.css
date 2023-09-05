@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+  --white: #ffffff;
+    --black: #000000;
+    --yellow: #ffb500;
+    --body: #242424;
+    --hover: #19465d;    
+}
+a{
+    text-decoration: none !important;
+}
+a.active {
+  color: var(--yellow) !important;
+}
+/*new search form start*/
+.banner{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+  }
+
+  .explore-anything h1{
+    font-size: 60px;
+     font-weight: 700;
+    }
+  .explore-anything p{
+    font-size: 20px; 
+    font-weight: 500;
+  }
+.search{
+    background-color: rgb(207 201 201 / 56%);
+    padding: 8px;
+    border-radius: 45px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .search form{
+    background: var(--white);
+    padding: 5px 15px;
+    border-radius: 45px;
+    position: relative;
+  } 
+ .search form .devider:before {
+    content: '';
+    width: 2px;
+    display: inline-block;
+    height: 60px;
+    position: absolute;
+    background: #e3dbdb;
+    margin-left: -7px;
+}
+  .search input:focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+  .search form button{
+    position: absolute;
+    background: var(--yellow);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  } 
+  .search form button i{
+    font-size: 25px;
+  }
+  .search form .search-input{
+    width: 42%;
+  }  
+  .search form .near{
+    width: 39%;
+  }
+  .search input{
+    line-height: 60px;
+    max-width: 1086px;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+    background: 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 10px;
+    margin: 0;
+    vertical-align: baseline;
+    border: none;
+  }
+  .search label{
+    position: relative;
+    font-size: 16px;
+    display: inline;
+    line-height: normal;
+    vertical-align: baseline;
+    font-weight: 500;
+    color: #4e4e4e;
+  }
+ 
+
+/*new search form*/
+
+/* Home page Category */
+.category{
+  margin-top: -60px;
+}
+.slider-nav .slider-item .category-img {
+ width: 100px;
+  height: 100px;
+ padding: 5px;
+ background-color: var(--yellow);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+/* Home page Category */
+
+/* See How it Works */
+.how-it-works{
+  background: url(../images/Right-shape.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain; 
+}
+.how-it-works .see-how {
+  font-size: 45px;
+  font-weight: 700;
+}
+.seperator{
+  border: 4px solid #ffaa07;
+    width: 20%;
+    margin:0 auto;
+}
+.number {
+  background: #19465d;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  margin: auto;
+  border-radius: 50%;
+  color: #fff;
+  font-family: 'Josefin Sans';
+  position: relative;
+  top: 35px;
+}
+
+
+/* See How it Works End*/
+
+
+/* inner page banner */
+.grid-banner {
+  background: url(../images/Banner-grid.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 270px;
+}
+/* inner page banner End */
+
+
+/* inner  page category */
+.browse-category a:not(:last-child) {
+  border-bottom: 1px solid #dddddd;
+}
+.browse-category a {
+  color: #000;
+  transition: 0.4s all;
+}
+.browse-category .scroll-category {
+  height: 370px;
+  overflow: auto;
+}
+/* inner  page category */
+
+
+/* Dashboard  */
+.tabpannel ul.nav-pills{
+  border: 1px solid var(--yellow);
+  border-right: 0;
+
+}
+.tabpannel .nav-pills .nav-link.active{
+  background-color: var(--yellow);
+  color: var(--white) !important;
+}
+.tabpannel .nav-pills .nav-link{
+ border-right: 1px solid var(--yellow);
+  color: var(--yellow);
+}
+.tabpannel .nav-pills .nav-link:not(:last-child){
+}
+
+.card-item-desc .desc {
+  font-size: 12px;
+  color: #abaab7;
+  display: block;
+}
+.listing-list table thead tr th{
+  font-weight: 500;
+}
+.listing-list .table-bordered>:not(caption)>*>*{
+  background-color: var(--white);
+}
+/* Dashboard */
+
+
+/* footer*/
+footer{
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  footer ul li a{
+    color: var(--black);
+    line-height: 40px;
+    font-size: 18px;
+  }
+  footer .footer-menu ul li a{
+    line-height: 10px;
+  }
+  footer .footer-links  li a i{
+   color: var(--yellow);
+   margin-right: 5px;
+  }
+  footer .footer-menu .list-inline-item:not(:last-child) {
+    padding-inline: 2rem;
+    border-right: 1px solid #808080;
+    line-height: 8px;
+  }
+  /* footer end */
