@@ -19,6 +19,19 @@ use App\Http\Controllers\ListingController;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/contact', function () {
+    return view('contact-us');
+});
+Route::get('/faq', function () {
+    return view('faq');
+});
+Route::get('/advertise-with-us', function () {
+    return view('advertise-with-us');
+});
+
 
 Auth::routes();
 

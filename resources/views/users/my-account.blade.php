@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12 mb-3">
-                <div class="card"> 
+                <div class="card sticky-top"> 
                      <div class="card-header  py-3 bg-white"> 
                         <h5 class="mb-0">My Dashboard</h5>
                      </div> 

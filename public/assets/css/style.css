@@ -270,6 +270,10 @@ footer{
     background-size: cover;
     background-position: center center;
   }
+  footer .footer-links li {
+    min-width: 20%;
+    margin: 0;
+}
   footer ul li a{
     color: var(--black);
     line-height: 40px;
@@ -283,8 +287,19 @@ footer{
    margin-right: 5px;
   }
   footer .footer-menu .list-inline-item:not(:last-child) {
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     border-right: 1px solid #808080;
     line-height: 8px;
+  }
+  @media screen and (max-width: 900px) {
+    footer .footer-links li {
+      min-width: 33%;
+    }
+  }
+
+    @media screen and (max-width: 600px) {
+      footer .footer-links li {
+        min-width: 100%;
+      }
   }
   /* footer end */

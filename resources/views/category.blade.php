@@ -33,8 +33,8 @@
                     <div class="view-as">
                       <ul class="list-inline">
                         <li class="list-inline-item"><a href="#"><i class="fa fa-sliders fa-lg text-dark" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a href="?view=list"><i class="fa fa-th-list fa-lg text-dark" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a href="?view=grid"><i class="fa fa-th-large fa-lg text-dark" aria-hidden="true"></i></a></li>
+                        <!-- <li class="list-inline-item"><a href="?view=list"><i class="fa fa-th-list fa-lg text-dark" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="?view=grid"><i class="fa fa-th-large fa-lg text-dark" aria-hidden="true"></i></a></li> -->
                       </ul>
                     </div>
                   </div>
@@ -329,31 +329,31 @@
              
                 <div class="border scroll-category mt-3 shadow">
                   
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Art and Entertanment <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Business <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Art and Entertanment <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Business <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Computer and Internet <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Computer and Internet <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Game <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Game <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Legal <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Legal <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Resturant <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Shopping <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Resturant <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Shopping <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Shopping Store <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Shopping Store <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Real Estate <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Real Estate <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Pet Service <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Pet Service <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Mobile and Repair <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Mobile and Repair <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Hotel and Travel <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Hotel and Travel <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Sport <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Sport <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
-                  <a href="" class="text-decoration-none d-block mx-2 p-2">Kids and Teen <i class="fa fa-arrow-right float-end text-warning" aria-hidden="true"></i></a>
+                  <a href="" class="text-decoration-none d-block mx-2 p-2">Kids and Teen <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
 
 
                
@@ -366,17 +366,16 @@
               
               <div class="recent-view shadow p-3 mb-3">
                 <h3 class="fw-600">Most Viewed</h3>
-                <div class="border border-warning w-50"></div>    
-
-                
+                <div class="border border-warning w-50"></div>   
+                                
                 <div class="row my-3 m-0 pb-3 align-items-center">
-                  <div class="col-4 p-0">
-                    
-                   <a class="text-dark" href=""><img class="image-fluid border border-warning" src="{{ url('/assets/images/placeholder.png') }}" width="100%" height="70px" alt=""></a>
-                    
+                  <div class="col-4 p-0">                    
+                   <a class="text-dark" href="">
+                    <img class="w-100 border border-warning" src="{{ url('/assets/images/placeholder.png') }}" alt="">
+                  </a>                    
                   </div>
-                  <div class="col-8 pl-2 p-0">
-                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none"></a></p>
+                  <div class="col-8 ps-2 p-0">
+                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
                     <div class="rating-star">
                       
                       <span></span>

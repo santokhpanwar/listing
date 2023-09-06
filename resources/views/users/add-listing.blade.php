@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12 mb-3">
-                <div class="card">
+                <div class="card sticky-top">
                      <div class="card-header  py-3 bg-white"> 
                         <h5 class="mb-0">My Dashboard</h5>
                      </div> 
@@ -236,6 +236,9 @@
                                                 <input type="text" class="form-control" placeholder="Add List Address"> 
                                             </div>
                                         </div>
+                                        <div class="col-sm-12">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1917595.022299442!2d-96.45101198654778!3d38.937381741359026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1693953951490!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                                     
@@ -258,18 +261,11 @@
                                     <div class="form-group">
                                         <!-- <label class="form-label text-dark">Services</label>  -->
                                         <select class="form-control ">
-                                            <option>Select Category</option>
+                                            <option>Service</option>
                                             <option value="0">All Categories</option>
                                             <option value="1">Hotels</option>
                                             <option value="2">Restaurant</option>
                                             <option value="3">Events</option>
-                                            <option value="4">Cinema</option>
-                                            <option value="5">Gym</option>
-                                            <option value="6">Shop &amp; Store</option>
-                                            <option value="7">Tours &amp; Travels</option>
-                                            <option value="8">Cafe</option>
-                                            <option value="9">Mobile Store</option>
-                                            <option value="10">College</option>
                                         </select>
                                         </div>
                                     </div>
@@ -296,7 +292,7 @@
                                             <div class="input-group-text">
                                                 <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-facebook tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
                                             </div>
-                                        <!-- input-group-text --> <input class="form-control" placeholder="Facebook URL" type="text"> 
+                                        <input class="form-control" placeholder="Facebook URL" type="text"> 
                                         </div>
                                     </div>
                                    <div class="col-md-4">
@@ -310,26 +306,20 @@
                                    <div class="col-md-4">
                                         <div class="input-group mb-2">
                                             <div class="input-group-text">
-                                                <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-google-plus tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
+                                                <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-linkedin tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
                                             </div>
-                                            <input class="form-control" placeholder="GooglePlus URL" type="text"> 
+                                            <input class="form-control" placeholder="Linkedin URL" type="text"> 
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="input-group mb-2">
                                             <div class="input-group-text">
-                                                <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-google-plus tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
+                                                <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-instagram tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
                                             </div>
-                                            <input class="form-control" placeholder="GooglePlus URL" type="text"> 
+                                            <input class="form-control" placeholder="Instagram URL" type="text"> 
                                         </div>
                                     </div>
                                    </div>
-                                    <div class="input-group mb-2">
-                                    <div class="input-group-text">
-                                        <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-map-marker tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
-                                    </div>
-                                    <input class="form-control" placeholder="GoogleMap Location URL" type="text"> 
-                                    </div>
                                    
                                    
                                 </div>

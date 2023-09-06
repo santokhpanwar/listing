@@ -16,6 +16,10 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <!-- slick slider cdn  -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <!-- Include Slick Slider theme CSS (optional) -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
     <link rel="stylesheet" type="text/css" href="{{url('/assets/slick/slick.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{url('/assets/slick/slick-theme.css')}}"/>
@@ -97,13 +101,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
     <script>
-       $('.slider-nav').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,  
-            asNavFor: '.slider-for',
-            arrows:true,
-            // dots:true,
-            focusOnSelect: true
+       $(document).ready(function(){
+            $('.slider-nav').slick({
+                autoplay: true,        
+                // dots: true,     
+                arrows: true,         
+                infinite: true,        
+                speed: 500,           
+                slidesToShow: 5,       
+                slidesToScroll: 1
+            });
         });
 
        
@@ -145,7 +152,7 @@
                         }
                     }
                 }
-            // script for multi image uploader
+            // script for multi image uploader end
 
     </script>
 </body>
