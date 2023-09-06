@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12 mb-3">
-                <div class="card">
+                <div class="card sticky-top">
                      <div class="card-header  py-3 bg-white"> 
                         <h5 class="mb-0">My Dashboard</h5>
                      </div> 
@@ -109,7 +109,7 @@
                                     </div>
                                     <div class="ps-3">
                                     <h6 class="text-warning h1">145</h6>
-                                    <span class="text-muted small pt-2 ps-1">No of Listing</span>
+                                    <span class="text-white small pt-2 ps-1 ">No of Listing</span>
 
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@
                                     </div>
                                     <div class="ps-3">
                                     <h6 class="text-warning h1">145</h6>
-                                    <span class="text-muted small pt-2 ps-1">No of Listing</span>
+                                    <span class="text-white small pt-2 ps-1">No of Listing</span>
 
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@
                                    <div class="card-icon bg-light p-3 rounded-circle d-flex align-items-center justify-content-center">
                                     <i class="bi bi-file-plus" style="font-size:40px;"></i>
                                     </div>
-                                    <p class="text-muted">Add Listing</p>
+                                    <p class="text-white">Add Listing</p>
                                    </a>
                                 </div>
                             </div>
