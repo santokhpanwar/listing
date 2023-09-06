@@ -35,12 +35,12 @@ class ListingController extends Controller
 
     public function show(listing $listing)
     {
-        return view('admin.listings.show', compact('listing'));
+        return view('admin.listing.show', compact('listing'));
     }
 
     public function edit(listing $listing)
     {
-        return view('admin.listings.edit', compact('listing'));
+        return view('admin.listing.edit', compact('listing'));
     }
 
     public function update(listing $listing, Request $request)
