@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\CompanyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 All Normal Users Routes List
 --------------------------------------------
 --------------------------------------------*/
-Route::middleware(['auth', 'user-access:user'])->group(function () {
+Route::name('user.')->prefix('user')->middleware(['auth', 'user-access:user'])->group(function () {
   
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/category', [HomeController::class, 'category'])->name('category');
@@ -46,21 +47,16 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
 All Admin Routes List
 --------------------------------------------
 --------------------------------------------*/
-Route::middleware(['auth', 'user-access:admin'])->group(function () {  
+Route::name('admin.')->prefix('admin')->middleware(['auth', 'user-access:admin'])->group(function () {  
     Route::get('/', [HomeController::class, 'index'])->name('home');
-    Route::get('/admin/dashboard', [HomeController::class, 'adminHome'])->name('admin.home');
-    Route::get('/admin/listing', [ListingController::class, 'index'])->name('admin.listing');
-    Route::get('/admin/listing/create', [ListingController::class, 'create'])->name('admin.create');
-    Route::post('/admin/listing', [ListingController::class, 'store']);
-    Route::get('/admin/listing/{id}/edit', [ListingController::class, 'edit']);
-    Route::get('/admin/listing/{id}', [ListingController::class, 'show']);
-    Route::put('/admin/listing/{id}', [ListingController::class, 'update']);
-    Route::delete('/admin/listing/{id}', [ListingController::class, 'destroy']);
+    Route::get('/dashboard', [HomeController::class, 'adminHome'])->name('admin.home');
+    Route::resource('/listings', ListingController::class);
+    Route::resource('/companies', CompanyController::class);
 });
   
 /*------------------------------------------
 --------------------------------------------
-All Admin Routes List
+All Managers Routes List
 --------------------------------------------
 --------------------------------------------*/
 // Route::middleware(['auth', 'user-access:manager'])->group(function () {

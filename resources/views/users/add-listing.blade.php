@@ -26,25 +26,25 @@
                              <ul class="list-group pb-1">
 
                                 <li class="list-group-item border-top border border-0 rounded-0">
-                                     <a class="  text-dark" href="{{url('/dashboard')}}">
+                                     <a class="  text-dark" href="{{url('/user/dashboard')}}">
                                         <span><i class="bi bi-pencil-square"></i> Dashboard</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>
                                  <li class="list-group-item border-top border border-0 rounded-0">
-                                     <a class="active text-dark" href="{{url('/add-listing')}}">
+                                     <a class="active text-dark" href="{{url('/user/add-listing')}}">
                                         <span><i class="bi bi-pencil-square"></i> Add Listing</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>
                                  <li class="list-group-item border-top border border-0 rounded-0">
-                                    <a class="text-dark" href="{{url('/my-account')}}">
+                                    <a class="text-dark" href="{{url('/user/my-account')}}">
                                         <span><i class="bi bi-pencil-square"></i> My Profile</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>  
                                  <li class="list-group-item border-top border border-0 rounded-0">
-                                    <a class="text-dark" href="{{url('/my-listing')}}">
+                                    <a class="text-dark" href="{{url('/user/my-listing')}}">
                                         <span><i class="bi bi-pencil-square"></i> My Listing</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>

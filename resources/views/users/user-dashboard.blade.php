@@ -26,25 +26,25 @@
                              <ul class="list-group pb-1">
 
                                 <li class="list-group-item border-top border border-0 rounded-0">
-                                     <a class=" active text-dark" href="{{url('/dashboard')}}">
+                                     <a class=" active text-dark" href="{{url('/user/dashboard')}}">
                                         <span><i class="bi bi-pencil-square"></i> Dashboard</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>
                                  <li class="list-group-item border-top border border-0 rounded-0">
-                                     <a class="text-dark" href="{{url('/add-listing')}}">
+                                     <a class="text-dark" href="{{url('/user/add-listing')}}">
                                         <span><i class="bi bi-pencil-square"></i> Add Listing</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>
                                  <li class="list-group-item border-top border border-0 rounded-0">
-                                    <a class="text-dark" href="{{url('/my-account')}}">
+                                    <a class="text-dark" href="{{url('/user/my-account')}}">
                                         <span><i class="bi bi-pencil-square"></i> My Profile</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>  
                                  <li class="list-group-item border-top border border-0 rounded-0">
-                                    <a class="text-dark" href="{{url('/my-listing')}}">
+                                    <a class="text-dark" href="{{url('/user/my-listing')}}">
                                         <span><i class="bi bi-pencil-square"></i> My Listing</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
@@ -138,15 +138,17 @@
                                 </div>
                             </div>
                         </div>
+                <div class="row">  
+                    <div class="col-md-7">
                         <div class="mb-3">
                             <h4>Latest Listing</h4>
                         </div>
                         <div class="list-card card shadow mb-3 p-2 w-100">
                             <div class="row no-gutter align-items-center">
-                                <div class="col-md-4">                    
-                                <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
+                                <div class="col-md-3">                    
+                                <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="130" class="card-img-top  " alt=""></a>            
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-9">
                                 <div class="card-body p-0">
                                     <div class="list-content border-bottom px-1 pb-2">
                                     <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="{{url('/single-category')}}">Best SEO Agency in Toronto</a></p>
@@ -196,10 +198,10 @@
 
                         <div class="list-card card shadow mb-3 p-2 w-100">
                             <div class="row no-gutter align-items-center">
-                                <div class="col-md-4">                    
-                                <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
+                                <div class="col-md-3">                    
+                                <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="130" class="card-img-top  " alt=""></a>            
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-9">
                                 <div class="card-body p-0">
                                     <div class="list-content border-bottom px-1 pb-2">
                                     <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="{{url('/single-category')}}">Best SEO Agency in Toronto</a></p>
@@ -250,10 +252,10 @@
 
                         <div class="list-card card shadow mb-3 p-2 w-100">
                             <div class="row no-gutter align-items-center">
-                                <div class="col-md-4">                    
-                                <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
+                                <div class="col-md-3">                    
+                                <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="130" class="card-img-top  " alt=""></a>            
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-9">
                                 <div class="card-body p-0">
                                     <div class="list-content border-bottom px-1 pb-2">
                                     <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="{{url('/single-category')}}">Best SEO Agency in Toronto</a></p>
@@ -300,12 +302,13 @@
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="col-md-5"></div>
 
                         
 
                         
-
+                      </div>
                     </div>
                 </div>
             </div>

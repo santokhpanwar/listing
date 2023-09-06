@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
     <div class="col-12">
-                <a href="/admin/listing/create" class="btn btn-primary mb-2">Create listing</a> 
+                <a href="/admin/listings/create" class="btn btn-primary mb-2">Create listing</a> 
                 <br>
                 <table class="table table-bordered">
                     <thead>
@@ -24,9 +24,9 @@
                             <td>{{ date('Y-m-d', strtotime($listing->published_at)) }}</td>
                             <td>{{ date('Y-m-d', strtotime($listing->created_at)) }}</td>
                             <td>
-                            <a href="/admin/listing/{{$listing->id}}" class="btn btn-primary">Show</a>
-                            <a href="/admin/listing/{{$listing->id}}/edit" class="btn btn-primary">Edit</a>
-                            <form action="/admin/listing/{{$listing->id}}" method="listing" class="d-inline">
+                            <a href="/admin/listings/{{$listing->id}}" class="btn btn-primary">Show</a>
+                            <a href="/admin/listings/{{$listing->id}}/edit" class="btn btn-primary">Edit</a>
+                            <form action="/admin/listings/{{$listing->id}}" method="listing" class="d-inline">
                                 {{ csrf_field() }}
                                 @method('DELETE')
                                 <button class="btn btn-danger" type="submit">Delete</button>

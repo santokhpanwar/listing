@@ -10,12 +10,12 @@ class ListingController extends Controller
     public function index()
     {
         $listings = Listing::all();
-        return view('admin.listing.index', compact('listings'));
+        return view('admin.listings.index', compact('listings'));
     }
 
     public function create()
     {
-        return view('admin.listing.create');
+        return view('admin.listings.create');
     }
 
     public function store(Request $request)
@@ -30,20 +30,20 @@ class ListingController extends Controller
         $listing->published_at = $request->published_at;
 
         $listing->save();
-        return redirect('/admin/listing')->with('success','Listing created successfully!');
+        return redirect('/admin/listings')->with('success','Listing created successfully!');
     }
 
-    public function show(listing $listing)
+    public function show(Listing $listing)
     {
-        return view('admin.listing.show', compact('listing'));
+        return view('admin.listings.show', compact('listing'));
     }
 
-    public function edit(listing $listing)
+    public function edit(Listing $listing)
     {
-        return view('admin.listing.edit', compact('listing'));
+        return view('admin.listings.edit', compact('listing'));
     }
 
-    public function update(listing $listing, Request $request)
+    public function update(Listing $listing, Request $request)
     {
         $request->validate([
             'title' => 'required',
@@ -54,12 +54,12 @@ class ListingController extends Controller
         $listing->published_at = $request->published_at;
 
         $listing->save();
-        return redirect('/admin/listing')->with('success','listing updated successfully!');
+        return redirect('/admin/listings')->with('success','listing updated successfully!');
     }
 
-    public function destroy(listing $listing)
+    public function destroy(Listing $listing)
     {
         $listing->delete();
-        return redirect('/admin/listing')->with('success','listing deleted successfully!');
+        return redirect('/admin/listings')->with('success','listing deleted successfully!');
     }
 }

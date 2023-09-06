@@ -90,8 +90,8 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{ route('admin.listing') }}">All Listings</a>
-                                    <a class="nav-link" href="{{ route('admin.create') }}">Add New Listings</a>
+                                    <a class="nav-link" href="{{ route('admin.listings.index') }}">All Listings</a>
+                                    <a class="nav-link" href="{{ route('admin.listings.create') }}">Add New Listings</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
