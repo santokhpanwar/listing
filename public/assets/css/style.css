@@ -196,7 +196,19 @@ a.active {
   padding-bottom: 10px;
 }
 .border.scroll-category::-webkit-scrollbar {
-  display: none;
+  height: 8px;
+  width:8px;
+}
+
+.border.scroll-category::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+.border.scroll-category::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(255,193,7,1); 
+  
 }
 /* inner  page category */
 
@@ -385,3 +397,4 @@ footer{
       font-size: 14px;
     }
   }
+
