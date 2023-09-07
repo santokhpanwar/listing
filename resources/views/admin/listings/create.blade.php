@@ -6,8 +6,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Create listing') }}</div>
-                <h1 class="my-4">Add New</h1>
                 <div class="card-body">
+                    <h1 class="my-4">Add New</h1>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -16,17 +16,17 @@
                     
                     <form action="/admin/listings" method="post">
                         @csrf
-                        <div class="form-group">
+                        <div class="form-group mb-3">
                             <label for="">listing Title</label>
                             <input type="text" name="title" class="form-control">
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group mb-3">
                             <label for="">listing Body</label>
                             <textarea name="body" id="" cols="30" rows="10" class="form-control"></textarea>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group mb-3">
                             <label for="">Publish At</label>
                             <input type="date" name="published_at" class="form-control">
                         </div>

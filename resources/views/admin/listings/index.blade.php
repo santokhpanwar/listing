@@ -42,7 +42,7 @@
                 </table> -->
                     <div class="listing-list table-responsive">
                     <table class="table table-bordered  mb-0 border-top table align-middle">
-                        <thead>
+                        <thead class="table-secondary">
                             <tr>  
                                 <th class="border-bottom-0">ID</th>                              
                                 <th class="border-bottom-0">Title</th>

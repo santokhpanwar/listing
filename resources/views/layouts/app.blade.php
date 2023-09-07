@@ -72,7 +72,12 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                @if (auth()->user()->type == 'admin') 
+                                <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard</a>
+                                
+                                @else
                                 <a class="dropdown-item" href="{{ route('user.dashboard') }}">Dashboard</a>
+                                @endif
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
