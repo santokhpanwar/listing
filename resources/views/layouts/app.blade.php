@@ -156,7 +156,7 @@
             });
 
             $(document).ready(function() {
-            $('#select-category').select2()({
+            $('#select-category').select2({
                 placeholder: "Select a Category"
 
             });
@@ -187,6 +187,56 @@
                     }
                 }
             // script for multi image uploader end
+        
+
+                // add listing tabs pre next script
+                
+        var currentTab = 0;
+        var numTabs = $('#myTabs li').length;
+
+        // Function to show the current tab
+        function showTab(index) {
+            $('#myTabs li').removeClass('active');
+            $('#myTabs li:eq(' + index + ')').addClass('active');
+
+            $('.tab-pane').removeClass('show active');
+            $('.tab-pane:eq(' + index + ')').addClass('show active');
+
+            // Disable or enable Prev/Next buttons based on the current tab
+            if (index === 0) {
+                $('#prevBtn').prop('disabled', true);
+            } else {
+                $('#prevBtn').prop('disabled', false);
+            }
+
+            if (index === numTabs - 1) {
+                $('#nextBtn').text('Submit');
+            } else {
+                $('#nextBtn').text('Next');
+            }
+        }
+
+        // Initialize the form by showing the first tab
+        showTab(currentTab);
+
+        // Handle Next button click
+        $('#nextBtn').click(function () {
+            if (currentTab < numTabs - 1) {
+                currentTab++;
+                showTab(currentTab);
+            } else {
+                // Handle form submission here
+                alert('Form submitted');
+            }
+        });
+
+        // Handle Prev button click
+        $('#prevBtn').click(function () {
+            if (currentTab > 0) {
+                currentTab--;
+                showTab(currentTab);
+            }
+        });
 
     </script>
 </body>

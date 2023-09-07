@@ -49,6 +49,14 @@
                       <div class="card-body p-0">
                         <div class="list-content border-bottom px-1 pb-2">
                           <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="{{url('/single-category')}}">Best SEO Agency in Toronto</a></p>
+                          <div class="rating-star">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <span class="ms-2">(0)</span>
+                          </div>
                                 
                           <div class="list-location d-flex">
                             <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
@@ -96,6 +104,14 @@
                       <div class="card-body p-0">
                         <div class="list-content border-bottom px-1 pb-2">
                           <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">Best SEO Agency in Toronto</a></p>
+                          <div class="rating-star">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <span class="ms-2">(0)</span>
+                          </div>
                                 
                           <div class="list-location d-flex">
                             <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
@@ -143,6 +159,14 @@
                       <div class="card-body p-0">
                         <div class="list-content border-bottom px-1 pb-2">
                           <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">Best SEO Agency in Toronto</a></p>
+                          <div class="rating-star">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <span class="ms-2">(0)</span>
+                          </div>
                                 
                           <div class="list-location d-flex">
                             <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
@@ -190,6 +214,14 @@
                       <div class="card-body p-0">
                         <div class="list-content border-bottom px-1 pb-2">
                           <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">Best SEO Agency in Toronto</a></p>
+                          <div class="rating-star">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <span class="ms-2">(0)</span>
+                          </div>
                                 
                           <div class="list-location d-flex">
                             <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
@@ -237,6 +269,14 @@
                       <div class="card-body p-0">
                         <div class="list-content border-bottom px-1 pb-2">
                           <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">Best SEO Agency in Toronto</a></p>
+                          <div class="rating-star">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <span class="ms-2">(0)</span>
+                          </div>
                                 
                           <div class="list-location d-flex">
                             <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>

@@ -112,6 +112,13 @@ a.active {
 .category{
   margin-top: -60px;
 }
+.category button.slick-arrow {
+  background: var(--yellow);
+  padding: 0;
+  width: 35px;
+  height: 40px;
+  border-radius: 5px;
+}
 .slider-nav .slider-item .category-img {
  width: 81px;
   height: 100px;
@@ -186,6 +193,9 @@ a.active {
 .browse-category a {
   color: #000;
   transition: 0.4s all;
+}
+.rating-star i, .rating-star span{
+  margin-right: 4px;
 }
 .browse-category .scroll-category {
   height: 370px;

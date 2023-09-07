@@ -62,16 +62,16 @@
                         <h5 class="mb-0">Add Listings</h5>
                     </div>
                     <div class="card-body p-3 bg-white rounded">
-                    <form id="commentForm" method="get" class="add-listing-form mb-0" novalidate="novalidate">
+                    <form method="post" class="add-listing-form mb-0">
                         <div id="rootwizard" class="border pt-0">
-                            <ul class="nav nav-pills border-bottom nav-justified d-block d-md-flex ">
+                            <ul class="nav nav-pills border-bottom nav-justified d-block d-md-flex " id="myTabs">
                                 <li class="nav-item"><a href="#first" data-bs-toggle="tab" class="nav-link font-bold rounded-0 border border-end-1 border-top-0 border-bottom-0  border-start-0  active">Overall Information</a></li>
                                 <li class="nav-item"><a href="#second" data-bs-toggle="tab" class="nav-link font-bold rounded-0 border border-end-1 border-top-0 border-bottom-0 border-start-0">Location</a></li>
                                 <li class="nav-item"><a href="#third" data-bs-toggle="tab" class="nav-link font-bold rounded-0 border border-end-1 border-top-0 border-bottom-0 border-start-0">Business Info</a></li>
                                 <li class="nav-item"><a href="#fourth" data-bs-toggle="tab" class="nav-link font-bold rounded-0  ">Confirmation</a></li>
                             </ul>
                             <div class="tab-content mb-0 b-0">
-                                <div class="tab-pane fade card-body active show" id="first">
+                                <div class="tab-pane fade card-body show active" id="first">
                                     <div class="control-group form-group">
                                     <div class="form-group"> <label class="form-label text-dark">Listing Title</label> <input type="text" class="form-control required" placeholder="Add List Name" aria-required="true"> </div>
                                     </div>
@@ -330,11 +330,14 @@
                                         <input type="checkbox" id="terms" class="me-2">
                                         <label for="terms">I Agree To Biznesbuzzer <a href="#" class="text-warning">Terms of Service</a></label>
                                     </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-light">Submit</button>
+                                    </div>
                                     
                                 </div>
                                 <ul class="list-inline wizard mb-0 mt-3 px-5 py-2 bg-light border-top">
-                                    <li class="previous list-inline-item disabled"><a href="javascript:void(0)" class="btn btn-secondary mb-0">Previous</a> </li>
-                                    <li class="next list-inline-item float-end"><a href="javascript:void(0)" class="btn btn-warning text-white  mb-0">Continue</a></li>
+                                    <li class="previous list-inline-item disabled"><button id="prevBtn" class="btn btn-secondary mb-0">Prev</button> </li>
+                                    <li class="next list-inline-item float-end"><button id="nextBtn" class="btn btn-warning text-white  mb-0">next</button></li>
                                 </ul>
                             </div>
                         </div>
