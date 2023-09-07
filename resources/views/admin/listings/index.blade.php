@@ -6,7 +6,7 @@
     <div class="col-12">
         <div class="d-flex flex-wrap justify-content-between">
             <h3>All Listing</h3>
-        <a href="/admin/listings/create" class="btn btn-warning text-white fw-bold mb-2 ">Create listing</a> 
+        <a href="/admin/listings/create" class="btn btn-success text-white fw-bold mb-2 "><i class="fa fa-plus" area-hidden="true"></i> Create listing</a> 
 
         </div>
                 <br>
