@@ -16,6 +16,9 @@ use App\Http\Controllers\CompanyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/category', [HomeController::class, 'category'])->name('category');
+Route::get('/single-category', [HomeController::class, 'single_category'])->name('single_category');
+Route::get('/search', [HomeController::class, 'search'])->name('search');
 
 Route::get('/', function () {
     return view('home');

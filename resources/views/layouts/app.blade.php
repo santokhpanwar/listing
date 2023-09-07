@@ -32,8 +32,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->
                     <img height="50" src="{{url('/assets/images/business_buzzer_logo.png')}}" alt="">
@@ -45,14 +45,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
-                            @if (Route::has('login'))
+                            <!-- @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
@@ -62,11 +62,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
-                            @endif
+                            @endif -->
+                            <a class="btn btn-warning text-white" href="{{route('login')}}"><i class="fa fa-plus" aria-hidden="true"></i> Add Bussiness</a>
                         @else
-                            <li class="nav-item dropdown">
+                            
+                            <li class="nav-item dropdown btn btn-outline-warning me-3 p-0">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i> {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -83,6 +85,11 @@
                                     </form>
                                 </div>
                             </li>
+
+                            <li class="nav-item">
+                               <a href="{{url('/user/add-listing')}}" class="btn btn-warning text-white p-2"><i class="fa fa-plus" aria-hidden="true"></i> Add Business</a>
+                            </li>
+                            
                         @endguest
                     </ul>
                 </div>
@@ -109,7 +116,30 @@
                 infinite: true,        
                 speed: 500,           
                 slidesToShow: 5,       
-                slidesToScroll: 1
+                slidesToScroll: 3,
+                
+                responsive: [
+                    {
+                    breakpoint: 800,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+
+                    {
+                    breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+                    
+                ]
             });
         });
 
@@ -126,7 +156,11 @@
             });
 
             $(document).ready(function() {
-            $('#select-category').select2();
+            $('#select-category').select2()({
+                placeholder: "Select a Category"
+
+            });
+            
         }); 
         //    days multiple select script
 

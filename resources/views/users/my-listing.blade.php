@@ -6,9 +6,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12 mb-3">
-                <div class="card sticky-top">
+                <div class="card">
                      <div class="card-header  py-3 bg-white"> 
-                        <h5 class="mb-0">My Dashboard</h5>
+                        <h5 class="mb-0">{{ Auth::user()->name }}</h5>
                      </div> 
                      <div class="card-body text-center item-user bg-white"> 
                         <div class="profile-pic"> 
@@ -16,9 +16,6 @@
                                 <span class="bg-success dots" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="online" aria-label="online"></span> 
                                 <img height="100"  src="{{url('/assets/images/user-image.png')}}" class="rounded-circle" alt="user-img" style="width:100px;"> 
                             </div>
-                             <a href="userprofile.html" class="text-dark">
-                                <h4 class="mt-3 mb-0">{{ Auth::user()->name }}</h4>
-                            </a> 
                         </div> 
                     </div> 
                     <aside class="app-sidebar doc-sidebar my-dash"> 

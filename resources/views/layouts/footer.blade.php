@@ -74,7 +74,7 @@
           </ul>
         </div>
         <div class="copyright">
-          <p>Copyright 2022 | All rights reserved</p>
+          <p>Copyright 2023 | All rights reserved</p>
         </div>
         <div class="social-icon">
           <ul class="list-inline mb-0">

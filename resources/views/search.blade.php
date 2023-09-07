@@ -15,7 +15,7 @@
 <section class="list-wrapper py-5">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 pr-0 text-center d-none d-lg-block">
+      <div class="col-md-2 pr-0 text-center">
         <img class="img-fluid sticky-top" src="{{ url('/assets/images/Side-ads.png') }}" alt="Side Ads">
       </div>
       <!-- middle-content -->
@@ -27,7 +27,7 @@
                 <div class="col-12 mb-3">
                   <div class="d-flex justify-content-between align-items-center flex-wrap">
                     <div class="sort-by">
-                      <h3 class="fw-600">Category Name</h3>
+                      <h3 class="fw-600">SEARCH RESULT FOR:</h3>
                       <div class="border border-warning w-50"></div>
                     </div>
                     <div class="view-as">
@@ -42,7 +42,7 @@
 
                 <div class="list-card card shadow mb-3 p-2 w-100">
                   <div class="row no-gutter align-items-center">
-                    <div class="col-md-4 ">                    
+                    <div class="col-md-4 d-flex align-items-stretch">                    
                       <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
                     </div>
                     <div class="col-md-8">
@@ -89,7 +89,7 @@
 
                 <div class="list-card card shadow mb-3 p-2 w-100">
                   <div class="row no-gutter align-items-center">
-                    <div class="col-md-4 ">                    
+                    <div class="col-md-4 d-flex align-items-stretch">                    
                       <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
                     </div>
                     <div class="col-md-8">
@@ -136,7 +136,7 @@
 
                 <div class="list-card card shadow mb-3 p-2 w-100">
                   <div class="row no-gutter align-items-center">
-                    <div class="col-md-4 ">                    
+                    <div class="col-md-4 d-flex align-items-stretch">                    
                       <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
                     </div>
                     <div class="col-md-8">
@@ -183,7 +183,7 @@
 
                 <div class="list-card card shadow mb-3 p-2 w-100">
                   <div class="row no-gutter align-items-center">
-                    <div class="col-md-4 ">                    
+                    <div class="col-md-4 d-flex align-items-stretch">                    
                       <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
                     </div>
                     <div class="col-md-8">
@@ -230,7 +230,7 @@
 
                 <div class="list-card card shadow mb-3 p-2 w-100">
                   <div class="row no-gutter align-items-center">
-                    <div class="col-md-4 ">                    
+                    <div class="col-md-4 d-flex align-items-stretch">                    
                       <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
                     </div>
                     <div class="col-md-8">
@@ -275,42 +275,7 @@
                   </div>
                 </div>               
 
-                    <!-- Grid list design -->
-                <!-- <div class="col-md-6 d-flex">
-                  <div class="grid-card card shadow my-3 w-100 position-relative">
-                   
-                    <a class="text-dark p-2" href=""><img height="145" src="{{ url('/assets/images/placeholder.png') }}" class="card-img-top" alt=""></a>
-                     
-                      <div class="card-body p-2">
-                        <div class="list-content text-center">
-                          <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">List Title</a></p>
-                          
-                          <div class="list-location d-flex">
-                            <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt=""></div>
-                            <span> <i class="fa fa-map-marker text-warning mt-1" aria-hidden="true"></i>      </span>
-                          </div>
-                          <div class="social-icon mt-3 mb-4">
-                            <ul class="list-inline">
-                              <li class="list-inline-item">
-                                <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="tel:" class="btn btn-outline-warning border-dark"><i class="fa fa-phone text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="" target="_blank" class="btn btn-outline-warning border-dark"><i class="fa fa-globe text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="#" class="btn btn-outline-warning border-dark"><i class="fa fa-share-alt text-dark" aria-hidden="true"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="" class="btn btn-warning text-white b-btn">Continue Reading <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                  </div>
-                </div> -->
-                
+                                   
                 <div class="col-12 my-3">
                   <img class="img-fluid" src="{{ url('/assets/images/Center-ads.jpg') }}" alt="">
                 </div>
@@ -481,11 +446,9 @@
                       <i class="fa fa-phone text-warning"></i> 1234567890
                     </div>
                   </div>
-                </div>
-                
+                </div>                
 
-              </div>
-           
+              </div>           
 
               <div class="ads">
               <img src="{{ url('/assets/images/ads2.jpg') }}" alt="" class="img-fluid">
@@ -497,7 +460,7 @@
       </div>
       <!-- middle-content end -->
 
-      <div class="col-md-2 pl-0 text-center d-none d-lg-block">
+      <div class="col-md-2 pl-0 text-center">
         <img class="img-fluid sticky-top" src="{{ url('/assets/images/Side-ads.png') }}" alt="Side Ads">
       </div>
 

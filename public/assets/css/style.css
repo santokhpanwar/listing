@@ -64,9 +64,9 @@ a.active {
   .search form button{
     position: absolute;
     background: var(--yellow);
-    width: 70px;
+    width: 60px;
     height: 70px;
-    border-radius: 50%;
+    border-radius: 50% !important;
     right: 0;
     top: 0;
     bottom: 0;
@@ -113,7 +113,7 @@ a.active {
   margin-top: -60px;
 }
 .slider-nav .slider-item .category-img {
- width: 100px;
+ width: 81px;
   height: 100px;
  padding: 5px;
  background-color: var(--yellow);
@@ -121,13 +121,25 @@ a.active {
  align-items: center;
  justify-content: center;
 }
+.category-item{
+  width: 90px;
+  border: 5px solid #fffefe91;
+}
+.category-item:hover .category-img{
+  background-color: #19465d;
+}
+.category-item .category-img img{
+  width: 60px;
+    height: 70px;
+    border-radius: 50%;
+}
 /* Home page Category */
 
 /* See How it Works */
 .how-it-works{
   background: url(../images/Right-shape.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
   background-size: contain; 
 }
 .how-it-works .see-how {
@@ -179,7 +191,28 @@ a.active {
   height: 370px;
   overflow: auto;
 }
+.recent-view .row:not(:last-child) {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+.border.scroll-category::-webkit-scrollbar {
+  display: none;
+}
 /* inner  page category */
+
+
+/* single page css  */
+.tabs .nav-pills .nav-link.active {
+  background: white;
+  color: black;
+}
+.tabs .nav-pills .nav-link {
+  color: #fff;
+}
+.reviews .review.card-body .row.mb-3:not(:last-child){
+  border-bottom:1px solid rgb(202, 199, 199);
+  padding-bottom: 10px;
+}
 
 
 /* Dashboard  */
@@ -212,7 +245,6 @@ ul.usertab-list li {
 .listing-list .table-bordered>:not(caption)>*>*{
   background-color: var(--white);
 }
-
 
 
 .add-listing-form .form-group {
@@ -262,6 +294,35 @@ ul.usertab-list li {
 
 /* multiimage uploder css */
 
+/* login-register css */
+  .login-register .login-img{
+    background: url(https://bb.astagingsite.com/assets/images/Login-image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .login-register .login-form form input {
+    height: 45px;
+  }
+  .login-register .login-form form input.form-check-input {
+    height: 16px;
+  }
+  hr.devider:after {
+    content: 'OR';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    background: #e1d9d9;
+    padding: 5px;
+    border-radius: 50%;
+    color: #000;
+    border: 1px solid;
+    transform: translate(-50%, 0%);
+
+}
+/* login-register css end */
+
 
 /* footer*/
 footer{
@@ -291,6 +352,9 @@ footer{
     border-right: 1px solid #808080;
     line-height: 8px;
   }
+  /* footer end */
+
+
   @media screen and (max-width: 900px) {
     footer .footer-links li {
       min-width: 33%;
@@ -298,8 +362,26 @@ footer{
   }
 
     @media screen and (max-width: 600px) {
+      .search{
+        width: 100%;
+      }
+      .search label{
+        font-size: 14px;
+      }
       footer .footer-links li {
         min-width: 100%;
       }
+      .search form .search-input {
+        width: 37%;
+    }
+    .search input{
+      line-height: 30px;
+      font-size: 12px;
+    }
+      .explore-anything h1 {
+        font-size: 32px;
+    }
+    .explore-anything p {
+      font-size: 14px;
+    }
   }
-  /* footer end */

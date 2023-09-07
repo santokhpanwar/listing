@@ -34,6 +34,11 @@ class HomeController extends Controller
     {
         return view('single-category');
     } 
+
+    public function search()
+    {
+        return view('search');
+    } 
     
     public function dashboard()
     {

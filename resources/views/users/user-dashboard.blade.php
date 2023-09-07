@@ -6,19 +6,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12 mb-3">
-                <div class="card sticky-top">
+                <div class="card">
                      <div class="card-header  py-3 bg-white"> 
-                        <h5 class="mb-0">My Dashboard</h5>
+                        <h5 class="mb-0">{{ Auth::user()->name }}</h5>
                      </div> 
                      <div class="card-body text-center item-user bg-white"> 
                         <div class="profile-pic"> 
                             <div class="profile-pic-img"> 
                                 <span class="bg-success dots" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="online" aria-label="online"></span> 
                                 <img height="100"  src="{{url('/assets/images/user-image.png')}}" class="rounded-circle" alt="user-img" style="width:100px;"> 
-                            </div>
-                             <a href="userprofile.html" class="text-dark">
-                                <h4 class="mt-3 mb-0">{{ Auth::user()->name }}</h4>
-                            </a> 
+                            </div> 
                         </div> 
                     </div> 
                     <aside class="app-sidebar doc-sidebar my-dash"> 
@@ -129,7 +126,7 @@
                             </div> 
                             <div class="col-md-4 mb-3">
                                 <div class="bg-warning d-flex align-items-center py-1 justify-content-center shadow border rounded">
-                                   <a href="{{url('/add-listing')}}" class="nav-link">
+                                   <a href="{{url('/user/add-listing')}}" class="nav-link">
                                    <div class="card-icon bg-light p-3 rounded-circle d-flex align-items-center justify-content-center">
                                     <i class="bi bi-file-plus" style="font-size:40px;"></i>
                                     </div>
@@ -303,7 +300,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5"></div>
+                    <div class="col-md-5">
+                    <div class="mb-3">
+                            <h4>Latest Post</h4>
+                        </div>
+
+                    </div>
 
                         
 

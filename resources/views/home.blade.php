@@ -17,7 +17,7 @@
                 <input type="text" id="near" name="near" class="near" placeholder="Select Location" value="" autocomplete="off">
 				<input type="hidden" id="latitude" name="latitude">
 				<input type="hidden" id="longitude" name="longitude">
-                <button id="button-addon6" type="submit" name="" class="btn btn-default submit-search rounded-pill">
+                <button id="button-addon6" type="submit" name="" class="border-0 btn-default submit-search rounded-pill">
                         <i class="bi bi-search text-white"></i>                        
                 </button>
 		        </form>
@@ -30,125 +30,138 @@
   <div class="container">
     <div class="slider slider-nav">
       <div class="slider-item">
-        <a href="{{url('/category')}}">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
       </div>
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
+      </div> 
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
+      </div> 
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
+      </div> 
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
+      </div> 
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
+      </div> 
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
+      </div> 
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
+      </div> 
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
+      </div> 
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
+      </div> 
       <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+           <a href="{{url('/category')}}">
+              <div class="category-item rounded-circle mx-auto">
+               <div class="category-img border rounded-circle mx-auto">
+               <div class="   rounded-circle ">
+                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
                 </div>
-              </div> 
+              </div>
+               </div> 
               <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
             </a>
-      </div>
-      <div class="slider-item">
-        <a href="#">
-              <div class="category-item ">
-                <div class="category-img   rounded-circle mx-auto">
-                  <img class="rounded-circle w-75" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div>
+      </div>      
+      
     </div>
   </div>
 </section>
