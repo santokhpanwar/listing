@@ -360,7 +360,7 @@ footer{
   footer ul li a{
     color: var(--black);
     line-height: 40px;
-    font-size: 18px;
+    font-size: 16px;
   }
   footer .footer-menu ul li a{
     line-height: 10px;

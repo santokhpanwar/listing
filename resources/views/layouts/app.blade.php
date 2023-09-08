@@ -90,10 +90,15 @@
                                     </form>
                                 </div>
                             </li>
-
+                            @if (auth()->user()->type == 'admin') 
+                            <li class="nav-item">
+                               <a href="{{url('/admin/listings/create')}}" class="btn btn-warning text-white p-2"><i class="fa fa-plus" aria-hidden="true"></i> Add Business</a>
+                            </li>
+                            @else
                             <li class="nav-item">
                                <a href="{{url('/user/add-listing')}}" class="btn btn-warning text-white p-2"><i class="fa fa-plus" aria-hidden="true"></i> Add Business</a>
                             </li>
+                            @endif
                             
                         @endguest
                     </ul>
@@ -148,100 +153,125 @@
             });
         });
 
-       
-        // tinymce script init
+       // tinymce script init
             tinymce.init({
                 selector: '#mytextarea'
             });
-        // tinymce script init
-
-        //    days multiple select script
+            // tinymce script init
+            //    days multiple select script
             $(document).ready(function () {
                 $('#days-multiple').select2();
             });
 
-            $(document).ready(function() {
-            $('#select-category').select2({
-                placeholder: "Select a Category"
-
+            $(document).ready(function () {
+                $('#opening-time').select2({
+                    placeholder: "Select a Opening Time"
+                });
+                
             });
-            
-        }); 
-        //    days multiple select script
+            $(document).ready(function () {
+                $('#closing-time').select2({
+                    placeholder: "Select a Closing Time"
+                });                
+            });
 
+
+
+            //    days multiple select script
+            $(document).ready(function() {
+                $('#select-category').select2({
+                    placeholder: "Select a Category"
+
+                });
+                
+            });
 
 
             // script for multi image uploader
             const imageInput = document.getElementById('imageInput');
-                const imagePreview = document.getElementById('imagePreview');
+            const imagePreview = document.getElementById('imagePreview');
 
-                imageInput.addEventListener('change', handleImageUpload);
+            imageInput.addEventListener('change', handleImageUpload);
 
-                function handleImageUpload() {
-                    imagePreview.innerHTML = ''; // Clear previous previews
+            function handleImageUpload() {
+                imagePreview.innerHTML = ''; // Clear previous previews
 
-                    const files = imageInput.files;
-                    for (let i = 0; i < files.length; i++) {
-                        const file = files[i];
-                        if (file.type.startsWith('image/')) {
-                            const imageElement = document.createElement('img');
-                            imageElement.src = URL.createObjectURL(file);
-                            imageElement.classList.add('preview-image');
-                            imagePreview.appendChild(imageElement);
-                        }
+                const files = imageInput.files;
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    if (file.type.startsWith('image/')) {
+                        const imageElement = document.createElement('img');
+                        imageElement.src = URL.createObjectURL(file);
+                        imageElement.classList.add('preview-image');
+                        imagePreview.appendChild(imageElement);
                     }
                 }
+            }
             // script for multi image uploader end
-        
 
-                // add listing tabs pre next script
-                
-        var currentTab = 0;
-        var numTabs = $('#myTabs li').length;
+            // add listing tabs pre next script
+                            
+            document.addEventListener('DOMContentLoaded', function () {
+                var currentTab = 0;
+                var tabs = document.querySelectorAll('.nav-link[data-bs-toggle="tab"]');
+                var prevBtn = document.getElementById('prevBtn');
+                var nextBtn = document.getElementById('nextBtn');
+                var submitBtn = document.getElementById('submitBtn');
 
-        // Function to show the current tab
-        function showTab(index) {
-            $('#myTabs li').removeClass('active');
-            $('#myTabs li:eq(' + index + ')').addClass('active');
+                // Function to show the current tab
+                function showTab(index) {
+                    for (var i = 0; i < tabs.length; i++) {
+                        tabs[i].classList.remove('active');
+                    }
+                    tabs[index].classList.add('active');
 
-            $('.tab-pane').removeClass('show active');
-            $('.tab-pane:eq(' + index + ')').addClass('show active');
+                    var tabPanes = document.querySelectorAll('.tab-pane');
+                    for (var i = 0; i < tabPanes.length; i++) {
+                        tabPanes[i].classList.remove('show', 'active');
+                    }
+                    tabPanes[index].classList.add('show', 'active');
 
-            // Disable or enable Prev/Next buttons based on the current tab
-            if (index === 0) {
-                $('#prevBtn').prop('disabled', true);
-            } else {
-                $('#prevBtn').prop('disabled', false);
-            }
+                    // Disable or enable Prev/Next buttons based on the current tab
+                    if (index === 0) {
+                        prevBtn.disabled = true;
+                    } else {
+                        prevBtn.disabled = false;
+                    }
 
-            if (index === numTabs - 1) {
-                $('#nextBtn').text('Submit');
-            } else {
-                $('#nextBtn').text('Next');
-            }
-        }
+                    if (index === tabs.length - 1) {
+                        nextBtn.style.display = 'none';
+                        submitBtn.style.display = 'block';
+                    } else {
+                        nextBtn.style.display = 'block';
+                        submitBtn.style.display = 'none';
+                    }
+                }
 
-        // Initialize the form by showing the first tab
-        showTab(currentTab);
-
-        // Handle Next button click
-        $('#nextBtn').click(function () {
-            if (currentTab < numTabs - 1) {
-                currentTab++;
+                // Initialize the form by showing the first tab
                 showTab(currentTab);
-            } else {
-                // Handle form submission here
-                alert('Form submitted');
-            }
-        });
 
-        // Handle Prev button click
-        $('#prevBtn').click(function () {
-            if (currentTab > 0) {
-                currentTab--;
-                showTab(currentTab);
-            }
-        });
+                // Handle Next button click
+                nextBtn.addEventListener('click', function () {
+                    if (currentTab < tabs.length - 1) {
+                        currentTab++;
+                        showTab(currentTab);
+                    }
+                });
+
+                // Handle Prev button click
+                prevBtn.addEventListener('click', function () {
+                    if (currentTab > 0) {
+                        currentTab--;
+                        showTab(currentTab);
+                    }
+                });
+
+                // Handle Submit button click (You can add form submission logic here)
+                submitBtn.addEventListener('click', function () {
+                    alert('Form submitted!');
+                });
+            });
+               
 
     </script>
 </body>

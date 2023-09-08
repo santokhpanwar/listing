@@ -50,4 +50,5 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'user-access:admin']
     Route::get('/dashboard', [AdminController::class, 'adminHome'])->name('dashboard');
     Route::resource('/listings', ListingController::class);
     Route::resource('/companies', CompanyController::class);
+    Route::resource('/categories', CompanyController::class);
 });

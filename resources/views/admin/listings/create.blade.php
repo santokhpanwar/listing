@@ -3,8 +3,8 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+        <div class="col-md-12">
+            <div class="card mb-3">
                 <div class="card-header">{{ __('Create listing') }}</div>
                 <div class="card-body">
                     <h1 class="my-4">Add New</h1>
@@ -35,7 +35,13 @@
                     </form>
                     
                 </div>
+                
             </div>
+
+
+@include('layouts.create-form')
+
+            
         </div>
     </div>
 </div>
