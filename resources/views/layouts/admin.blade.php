@@ -83,7 +83,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <a class="nav-link" href="{{ route('admin.dashboard') }}">
-                                <div class="sb-nav-link-icon"><i class="bi bi-grid"></i></div>
+                                <div class="sb-nav-link-icon"><i class="bi bi-house"></i></div>
                                 Dashboard
                             </a>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
@@ -93,10 +93,10 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{ route('admin.listings.index') }}">All Listings</a>
-                                    <a class="nav-link" href="{{ route('admin.listings.create') }}">Add New Listings</a>
+                                    <a class="nav-link" href="{{ route('admin.listings.index') }}"><i class="bi bi-dash-lg me-2" ></i> All Listings</a>
+                                    <a class="nav-link" href="{{ route('admin.listings.create') }}"> <i class="bi bi-dash-lg me-2"></i> Add New Listings</a>
                                 </nav>
-                            </div>
+                          </div>
 
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsecategory" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="bi bi-tag"></i></div>
@@ -105,8 +105,8 @@
                             </a>
                             <div class="collapse" id="collapsecategory" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{ route('admin.listings.index') }}">All Categories</a>
-                                    <a class="nav-link" href="{{ route('admin.listings.create') }}">Add New Categories</a>
+                                    <a class="nav-link" href="{{ route('admin.categories.index') }}"><i class="bi bi-dash-lg me-2"></i> All Categories</a>
+                                    <a class="nav-link" href="{{ route('admin.categories.create') }}"><i class="bi bi-dash-lg me-2"></i> Add New Categories</a>
                                 </nav>
                             </div>
 
@@ -117,8 +117,8 @@
                             </a>
                             <div class="collapse" id="collapseuser" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{ route('admin.listings.index') }}">All Users</a>
-                                    <a class="nav-link" href="{{ route('admin.listings.create') }}">Add New User</a>
+                                    <a class="nav-link" href="{{ route('admin.listings.index') }}"><i class="bi bi-dash-lg me-2"></i> All Users</a>
+                                    <a class="nav-link" href="{{ route('admin.listings.create') }}"><i class="bi bi-dash-lg me-2"></i> Add New User</a>
                                 </nav>
                             </div>
 
@@ -166,8 +166,8 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        <div class="small">Logged in as: <span>{{ Auth::user()->name }}</span></div>
+                        Biznessbuzzer
                     </div>
                 </nav>
             </div>

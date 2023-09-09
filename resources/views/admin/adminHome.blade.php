@@ -36,7 +36,7 @@
                                     </div>
                                     <div class="ps-3">
                                         <h6 class="text-warning h1">145</h6>
-                                        <span class="text-white small pt-2 ps-1 ">No of Listing</span>
+                                        <span class="text-white small pt-2 ps-1 ">No of Categories</span>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="ps-3">
                                         <h6 class="text-warning h1">145</h6>
-                                        <span class="text-white small pt-2 ps-1 ">No of Listing</span>
+                                        <span class="text-white small pt-2 ps-1 ">No of Users</span>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="ps-3">
                                         <h6 class="text-warning h1">145</h6>
-                                        <span class="text-white small pt-2 ps-1 ">No of Listing</span>
+                                        <span class="text-white small pt-2 ps-1 ">No of Post</span>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
