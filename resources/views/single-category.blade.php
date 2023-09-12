@@ -17,7 +17,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2 text-center d-none d-lg-block">
-                    <img class="img-fluid sticky-top" src="https://bb.astagingsite.com/assets/images/Side-ads.png" alt="Side Ads">
+                    <img class="img-fluid sticky-top z-n1" src="https://bb.astagingsite.com/assets/images/Side-ads.png" alt="Side Ads">
                 </div>
                 <!-- middle-content -->
                 <div class="col-lg-8 col-md-12">
@@ -388,7 +388,7 @@
                 <!-- middle-content end -->
 
                 <div class="col-md-2 text-center d-none d-lg-block">
-                    <img class="img-fluid sticky-top" src="https://bb.astagingsite.com/assets/images/Side-ads.png" alt="">
+                    <img class="img-fluid sticky-top z-n1" src="https://bb.astagingsite.com/assets/images/Side-ads.png" alt="">
 
                 </div>
             </div>

@@ -16,7 +16,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-2 pr-0 text-center d-none d-lg-block">
-        <img class="img-fluid sticky-top" src="{{ url('/assets/images/Side-ads.png') }}" alt="Side Ads">
+        <img class="img-fluid sticky-top z-n1" src="{{ url('/assets/images/Side-ads.png') }}" alt="Side Ads">
       </div>
       <!-- middle-content -->
       <div class="col-md-8">
@@ -538,7 +538,7 @@
       <!-- middle-content end -->
 
       <div class="col-md-2 pl-0 text-center d-none d-lg-block">
-        <img class="img-fluid sticky-top" src="{{ url('/assets/images/Side-ads.png') }}" alt="Side Ads">
+        <img class="img-fluid sticky-top z-n1" src="{{ url('/assets/images/Side-ads.png') }}" alt="Side Ads">
       </div>
 
 

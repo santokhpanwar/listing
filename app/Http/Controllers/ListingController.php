@@ -22,7 +22,6 @@ class ListingController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'body' => 'required',
             ]);
         $listing = new Listing();
         $listing->title = $request->title;

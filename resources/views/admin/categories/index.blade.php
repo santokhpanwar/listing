@@ -21,7 +21,6 @@
                                         <th class="border-bottom-0">ID</th> 
                                         <th>Image</th>                             
                                         <th class="border-bottom-0">Title</th>
-                                        <th class="border-bottom-0">Published At</th>
                                         <th class="border-bottom-0">Created at</th>
                                         <th class="border-bottom-0">Status</th>
                                         <th class="border-bottom-0">Action</th>
@@ -35,8 +34,7 @@
                                     </td>
                                     <td class="">Art and Entertainment</td>
                                     <td class="text-center">2023-09-08</td>
-                                    <td class="text-center">2023-09-08</td>
-                                    <td class="text-center">Published</td>
+                                    <td class="text-center">Inactive</td>
                                     <td class="text-center d-flex">
                                         <a href="/admin/categories/edit" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
                                         <a href="/admin/categories/show" class="btn btn-success btn-sm me-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
@@ -51,8 +49,7 @@
                                     </td>
                                     <td class="">Games</td>
                                     <td class="text-center">2023-09-08</td>
-                                    <td class="text-center">2023-09-08</td>
-                                    <td class="text-center">Published</td>
+                                    <td class="text-center">Active</td>
                                     <td class="text-center d-flex">
                                         <a href="/admin/categories/edit" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
                                         <a href="/admin/categories/show" class="btn btn-success btn-sm me-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
