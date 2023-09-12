@@ -40,8 +40,20 @@ class CompanyController extends Controller
             'email' => 'required',
             'address' => 'required',
         ]);
+
+        $company = new Company();
+        $company->name = $request->name;
+        $company->email = $request->email;
+        $company->address = $request->address;
+
+        if ($request->hasFile('logo')) {
+             $imagePath = $request->file('logo')->store('public/images');
+             $company->logo = $imagePath;
+        }        
+
+        $company->save();
         
-        Company::create($request->post());
+        // Company::create($request->post());
 
         return redirect()->route('admin.companies.index')->with('success','Company has been created successfully.');
     }
