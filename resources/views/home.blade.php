@@ -29,6 +29,7 @@
 <section class="category pb-5">
   <div class="container">
     <div class="slider slider-nav">
+    @foreach($Categories as $Categories)
       <div class="slider-item">
            <a href="{{url('/category')}}">
               <div class="category-item rounded-circle mx-auto">
@@ -38,129 +39,11 @@
                 </div>
               </div>
                </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
+              <h5 class="text-center text-dark mb-0">{{ $Categories->title}}</h5>  
             </a>
       </div>
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div> 
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div> 
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div> 
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div> 
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div> 
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div> 
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div> 
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div> 
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div> 
-      <div class="slider-item">
-           <a href="{{url('/category')}}">
-              <div class="category-item rounded-circle mx-auto">
-               <div class="category-img border rounded-circle mx-auto">
-               <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
-                </div>
-              </div>
-               </div> 
-              <h5 class="text-center text-dark mb-0">Art and Entertainment</h5>  
-            </a>
-      </div>      
+      @endforeach
+          
       
     </div>
   </div>

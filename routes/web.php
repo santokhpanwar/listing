@@ -6,7 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListingController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CompanyController;
-use App\Http\Controllers\categoryController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,5 +51,5 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'user-access:admin']
     Route::get('/dashboard', [AdminController::class, 'adminHome'])->name('dashboard');
     Route::resource('/listings', ListingController::class);
     Route::resource('/companies', CompanyController::class);
-    Route::resource('/categories', categoryController::class);
+    Route::resource('/categories', CategoryController::class);
 });

@@ -31,7 +31,7 @@
                             <input type="date" name="published_at" class="form-control" value="{{ date('Y-m-d', strtotime($listing->published_at)) }}">
                         </div>
                         
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
                     </form>
                     
                 </div>

@@ -9,7 +9,7 @@
                     <div class="card-header">
                     <div class="d-flex flex-wrap justify-content-between align-items-center">
                         <h3 class="mb-0">All Listing </h3>
-                        <a href="/admin/listings/create" class="btn btn-success text-white fw-bold "><i class="fa fa-plus" area-hidden="true"></i> Create listing</a> 
+                        <a href="/admin/listings/create" class="btn btn-success text-white fw-bold "><i class="bi bi-plus-circle"></i> Create listing</a> 
 
                     </div>
                     </div>
@@ -54,12 +54,12 @@
                                         <td class="text-center">{{ date('Y-m-d', strtotime($listing->created_at)) }}</td>
                                         <td class="text-center">  
                                             <a href="/admin/listings/{{$listing->id}}" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
+                                            <a href="/admin/listings/{{$listing->id}}" class="btn btn-success btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
                                             <form action="/admin/listings/{{$listing->id}}" method="listing" class="d-inline">
                                                 {{ csrf_field() }}
                                                 @method('DELETE')
                                                 <button class="btn btn-danger me-1 btn-sm" type="submit" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></button> 
                                             </form>
-                                            <a href="/admin/listings/{{$listing->id}}" class="btn btn-success btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
                                         </td>
                                     </tr>
                                     @endforeach

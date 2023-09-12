@@ -9,7 +9,7 @@
                     <div class="card-header">
                     <div class="d-flex flex-wrap justify-content-between align-items-center">
                         <h3 class="mb-0">All Categories </h3>
-                        <a href="/admin/listings/create" class="btn btn-success text-white fw-bold "><i class="fa fa-plus" area-hidden="true"></i> Create Categoris</a> 
+                        <a href="/admin/categories/create" class="btn btn-success text-white fw-bold "><i class="bi bi-plus-circle"></i> Create Categoris</a> 
 
                     </div>
                     </div>
@@ -27,35 +27,35 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center ">
-                                        <img class="rounded" width="80" height="60" src="http://127.0.0.1:8000/assets/images/placeholder.png" alt="">
-                                    </td>
-                                    <td class="">Art and Entertainment</td>
-                                    <td class="text-center">2023-09-08</td>
-                                    <td class="text-center">Inactive</td>
-                                    <td class="text-center d-flex">
-                                        <a href="/admin/categories/edit" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
-                                        <a href="/admin/categories/show" class="btn btn-success btn-sm me-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
-                                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-trash"></i></a> 
-                                    </td>
-                                </tr>
+                                @foreach($Categories as $Categories)
+                                    <tr>
+                                        <td class="text-center">{{ $Categories->id }}</td>
+                                        <td class="text-center ">
+                                            <img class="rounded" width="80" height="60" src="{{ url('/assets/images/placeholder.png')}}" alt="">
+                                        </td>
+                                        <td class="">{{ $Categories->title }}</td>
+                                        <td class="text-center">{{ $Categories->created_at}}</td>
+                                        <!-- $status=  -->
+                                       @if($Categories->status == '1')
+                                        <td class="text-center text-success">Active</td>
+                                        @else
+                                        <td class="text-center text-danger">Inactive</td>
+                                        @endif
 
-                                <tr>
-                                    <td class="text-center">2</td>
-                                    <td class="text-center ">
-                                        <img class="rounded" width="80" height="60" src="http://127.0.0.1:8000/assets/images/placeholder.png" alt="">
-                                    </td>
-                                    <td class="">Games</td>
-                                    <td class="text-center">2023-09-08</td>
-                                    <td class="text-center">Active</td>
-                                    <td class="text-center d-flex">
-                                        <a href="/admin/categories/edit" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
-                                        <a href="/admin/categories/show" class="btn btn-success btn-sm me-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
-                                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-trash"></i></a> 
-                                    </td>
-                                </tr>
+                                       
+                                        <td class="text-center d-flex">
+                                            <a href="/admin/categories/edit" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
+                                            <a href="/admin/categories/show" class="btn btn-success btn-sm me-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
+                                            <form action="/admin/categories/{{$Categories->id}}" method="Categories" class="d-inline">
+                                                {{ csrf_field() }}
+                                                @method('DELETE')
+                                                <button class="btn btn-danger me-1 btn-sm" type="submit" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></button> 
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+
+                               
                                 </tbody>
                             </table>
                         </div>

@@ -198,7 +198,7 @@ a.active {
   margin-right: 4px;
 }
 .browse-category .scroll-category {
-  height: 370px;
+  max-height: 370px;
   overflow: auto;
 }
 .recent-view .row:not(:last-child) {

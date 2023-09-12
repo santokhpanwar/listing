@@ -348,35 +348,9 @@
                                   <h4 class="text-dark">Browse Category</h4>
                                   <div class="border border-warning w-50"></div>
                                   <div class="border scroll-category mt-3 shadow">
-                  
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Art and Entertanment <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Business <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Computer and Internet <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Game <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Legal <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Resturant <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Shopping <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Shopping Store <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Real Estate <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Pet Service <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Mobile and Repair <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Hotel and Travel <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Sport <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-                                  <a href="" class="text-decoration-none d-block mx-2 p-2">Kids and Teen <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
-
-
-                              
+                                    @foreach($Categories as $Categories)                  
+                                     <a href="#" class="text-decoration-none d-block mx-2 p-2">{{ $Categories->title}} <i class="fa fa-arrow-right float-end pt-1 text-warning" aria-hidden="true"></i></a>
+                                    @endforeach                             
                                 </div>
                             </div>
                             </div>
