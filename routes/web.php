@@ -52,4 +52,5 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'user-access:admin']
     Route::resource('/listings', ListingController::class);
     Route::resource('/companies', CompanyController::class);
     Route::resource('/categories', CategoryController::class);
+    Route::resource('/users', CategoryController::class);
 });

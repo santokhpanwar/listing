@@ -13,8 +13,14 @@ class Listing extends Model
         'created_at',
         'updated_at',
         // 'deleted_at',
-        'published_at',
+        'published_at'
+        
     ];
 
-    protected $fillable = ['title', 'body', 'published_at'];
+    protected $fillable = [
+        'title',
+        'body',
+        'published_at',
+        'category'
+    ];
 }

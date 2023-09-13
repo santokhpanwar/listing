@@ -11,6 +11,9 @@
     --body: #242424;
     --hover: #19465d;    
 }
+body{
+  font-size: 16px !important;
+}
 a{
     text-decoration: none !important;
 }
@@ -224,6 +227,11 @@ a.active {
 
 
 /* single page css  */
+.busines-details h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
 .tabs .nav-pills .nav-link.active {
   background: white;
   color: black;

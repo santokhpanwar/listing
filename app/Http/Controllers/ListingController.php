@@ -22,10 +22,22 @@ class ListingController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'body' => 'required',
+            'category' => 'required',
+            'phone_number' => 'required',
+            'weekday' => 'required',
+            'opening_time' => 'required',
+            'closing_time' => 'required',
+            'image' => 'required',
+            'video_url' => 'required',
+            'address' => 'required',
+            'address2' => 'required',
+            'address2' => 'required',
             ]);
         $listing = new Listing();
         $listing->title = $request->title;
         $listing->body = $request->body;
+        $listing->category = $request->category;
         $listing->published_at = $request->published_at;
 
         $listing->save();

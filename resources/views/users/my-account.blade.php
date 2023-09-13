@@ -81,14 +81,61 @@
                                     <div class="media-heading">
                                         <h3 class="card-title mb-3 font-weight-semibold">Personal Details</h3>
                                     </div>
-                                    <ul class="usertab-list mb-0">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                    <th scope="row">Name :</th>
+                                                    <td>{{ Auth::user()->name }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <th scope="row">Emain :</th>
+                                                    <td>{{ Auth::user()->email }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Phone Number :</th>
+                                                        <td>9999999999</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Address :</th>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                    <th scope="row">Facebook :</th>
+                                                    <td> <a href="#">https://www.facebook.com/</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <th scope="row">Twitter :</th>
+                                                    <td><a href="#">https://www.twitter.com/</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <th scope="row">Instagram :</th>
+                                                    <td><a href="#">https://www.instagram.com/</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <th scope="row">Linkedin :</th>
+                                                    <td><a href="#">https://www.linkedin.com/</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <ul class="usertab-list mb-0">
                                         <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Location :</span> USA</a></li>
                                         <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Full Name :</span> Rubin Carmody</a></li>
                                         <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Languages :</span> English, German, Spanish.</a></li>
                                         <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Website :</span>Bizness.com</a></li>
                                         <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Email :</span> georgemestayer@bizness.com</a></li>
                                         <li class="list-group-item"><a href="javascript:void(0)" class="text-dark"><span class="fw-bold">Phone :</span> +125 254 3562 </a></li>
-                                    </ul>
+                                    </ul> -->
                                     <div class="mt-5 d-inline-block">
                                         <div class="">
                                             <div class="media-heading">
