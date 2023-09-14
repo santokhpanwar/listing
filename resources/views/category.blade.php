@@ -401,10 +401,7 @@
                   </div>
                   <div class="col-8 ps-2 p-0">
                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                    <div class="rating-star">
-                      
-                      <span></span>
-                    </div>  
+                     
                     <div class="list-number">
                       <i class="fa fa-map-marker text-warning"></i> city country
                     </div>
@@ -422,10 +419,7 @@
                   </div>
                   <div class="col-8 ps-2 p-0">
                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                    <div class="rating-star">
-                      
-                      <span></span>
-                    </div>  
+                     
                     <div class="list-number">
                       <i class="fa fa-map-marker text-warning"></i> city country
                     </div>
@@ -443,10 +437,7 @@
                   </div>
                   <div class="col-8 ps-2 p-0">
                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                    <div class="rating-star">
-                      
-                      <span></span>
-                    </div>  
+                     
                     <div class="list-number">
                       <i class="fa fa-map-marker text-warning"></i> city country
                     </div>
@@ -464,10 +455,7 @@
                   </div>
                   <div class="col-8 ps-2 p-0">
                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                    <div class="rating-star">
-                      
-                      <span></span>
-                    </div>  
+                     
                     <div class="list-number">
                       <i class="fa fa-map-marker text-warning"></i> city country
                     </div>
@@ -485,10 +473,7 @@
                   </div>
                   <div class="col-8 ps-2 p-0">
                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                    <div class="rating-star">
-                      
-                      <span></span>
-                    </div>  
+                     
                     <div class="list-number">
                       <i class="fa fa-map-marker text-warning"></i> city country
                     </div>

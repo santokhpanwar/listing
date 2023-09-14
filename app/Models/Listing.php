@@ -17,9 +17,8 @@ class Listing extends Model
         
     ];
 
-<<<<<<< HEAD
-    protected $fillable = ['title', 'body', 'images', 'published_at'];
-=======
+    // protected $fillable = ['title', 'body', 'images', 'published_at'];
+
     protected $fillable = [
         'title',
         'body',
@@ -44,9 +43,7 @@ class Listing extends Model
         'facebook_url',
         'twitter_url',
         'linkedin_url',
-        'instagram_url',
-        
+        'instagram_url',        
         'published_at'
     ];
->>>>>>> 29a9bd554352b0511fa9ec5fc445536932103033
 }

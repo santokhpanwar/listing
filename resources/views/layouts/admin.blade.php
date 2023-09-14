@@ -81,13 +81,13 @@
                             </a>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="bi bi-columns-gap"></i></div>
-                                Listings
+                                Business
                                 <div class="sb-sidenav-collapse-arrow"><i class="bi bi-chevron-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{ route('admin.listings.index') }}"><i class="bi bi-dash-lg me-2" ></i> All Listings</a>
-                                    <a class="nav-link" href="{{ route('admin.listings.create') }}"> <i class="bi bi-dash-lg me-2"></i> Add New Listings</a>
+                                    <a class="nav-link" href="{{ route('admin.listings.index') }}"><i class="bi bi-dash-lg me-2" ></i> All Businesses</a>
+                                    <a class="nav-link" href="{{ route('admin.listings.create') }}"> <i class="bi bi-dash-lg me-2"></i> Add New Business</a>
                                 </nav>
                           </div>
 
