@@ -32,7 +32,18 @@ class ListingController extends Controller
             'video_url' => 'required',
             'address' => 'required',
             'address2' => 'required',
-            'address2' => 'required',
+            'country' => 'required',
+            'state' => 'required',
+            'city' => 'required',
+            'zip_code' => 'required',
+            'estb_year' => 'required',
+            'service' => 'required',
+            'iso_certified' => 'required',
+            'fax_number' => 'required',
+            'toll_free_number' => 'required',
+            'twitter_url' => 'required',
+            'linkedin_url' => 'required',
+            'instagram_url' => 'required'
             ]);
         $listing = new Listing();
         $listing->title = $request->title;
