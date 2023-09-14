@@ -8,5 +8,15 @@
     "file": "assets/app-298ba296.css",
     "isEntry": true,
     "src": "resources/sass/app.scss"
+  },
+  "resources/assets/css/style.css": {
+    "file": "assets/style.css",
+    "isEntry": true,
+    "src": "resources/assets/css/style.css"
+  },
+  "resources/assets/slick/slick.min.js": {
+    "file": "assets/slick.min.js",
+    "isEntry": true,
+    "src": "resources/assets/slick/slick.min.js"
   }
 }
