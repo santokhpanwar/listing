@@ -21,6 +21,11 @@
                     <div>
                         {{$listing->body}}
                     </div>
+                    @if($listing->images)
+                        @foreach(json_decode($listing->images) as $image)
+                            <img src="{{ asset('images/' . $image) }}" alt="listing Image">
+                        @endforeach                    
+                    @endif
                 </div>
             </div>
         </div>

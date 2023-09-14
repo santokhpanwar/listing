@@ -16,5 +16,5 @@ class Listing extends Model
         'published_at',
     ];
 
-    protected $fillable = ['title', 'body', 'published_at'];
+    protected $fillable = ['title', 'body', 'images', 'published_at'];
 }

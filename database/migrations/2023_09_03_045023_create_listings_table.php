@@ -20,6 +20,14 @@ return new class extends Migration
             $table->datetime('published_at')->nullable();
             $table->timestamps();
         });
+
+        Schema::create('listing_images', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('listing_id');
+            $table->string('image_path');
+            $table->timestamps();
+    
+            $table->foreign('listing_id')->references('id')->on('listings')->onDelete('cascade');
     }
 
     /**

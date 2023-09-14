@@ -30,6 +30,13 @@
                             <label for="">Publish At</label>
                             <input type="date" name="published_at" class="form-control" value="{{ date('Y-m-d', strtotime($listing->published_at)) }}">
                         </div>
+
+                        <div class="form-group">
+                            <label for="">Images</label>
+                            <input class="d-block mx-auto" type="file" id="imageInput" accept="image/*"  name="images[]" multiple>
+                        </div>
+
+                        
                         
                         <button type="submit" class="btn btn-primary">Update</button>
                     </form>

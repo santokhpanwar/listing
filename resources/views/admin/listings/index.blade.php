@@ -53,7 +53,7 @@
                                         <td class="text-center">{{ date('Y-m-d', strtotime($listing->published_at)) }}</td>
                                         <td class="text-center">{{ date('Y-m-d', strtotime($listing->created_at)) }}</td>
                                         <td class="text-center">  
-                                            <a href="/admin/listings/{{$listing->id}}" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
+                                            <a href="/admin/listings/{{$listing->id}}/edit" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
                                             <a href="/admin/listings/{{$listing->id}}" class="btn btn-success btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
                                             <form action="/admin/listings/{{$listing->id}}" method="listing" class="d-inline">
                                                 {{ csrf_field() }}

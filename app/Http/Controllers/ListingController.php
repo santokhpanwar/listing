@@ -23,12 +23,21 @@ class ListingController extends Controller
         $request->validate([
             'title' => 'required',
             ]);
+            
         $listing = new Listing();
         $listing->title = $request->title;
         $listing->body = $request->body;
-        $listing->published_at = $request->published_at;
-
+        $listing->published_at = $request->published_at; 
         $listing->save();
+
+        // Handle image uploads
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $image) {
+                $imagePath = $image->store('listing_images');
+                $listing->images()->create(['image_path' => $imagePath]);
+            }
+        }
+
         return redirect('/admin/listings')->with('success','Listing created successfully!');
     }
 
@@ -48,11 +57,21 @@ class ListingController extends Controller
             'title' => 'required',
             'body' => 'required',
             ]);
-        $listing->title = $request->title;
-        $listing->body = $request->body;
-        $listing->published_at = $request->published_at;
+        // Update the item
+    $listing->update([
+        'name' => $request->input('name'),
+        'body' => $request->input('body'),
+        'published_at' => $request->input('published_at'),
+        // Update other fields as needed
+    ]);
 
-        $listing->save();
+    // Handle image uploads
+    if ($request->hasFile('images')) {
+        foreach ($request->file('images') as $image) {
+            $imagePath = $image->store('listing_images');
+            $listing->images()->create(['image_path' => $imagePath]);
+        }
+    }
         return redirect('/admin/listings')->with('success','listing updated successfully!');
     }
 

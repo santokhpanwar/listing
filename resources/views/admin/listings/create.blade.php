@@ -30,6 +30,8 @@
                             <label for="">Publish At</label>
                             <input type="date" name="published_at" class="form-control">
                         </div>
+
+                        <input class="d-block mx-auto" type="file" id="imageInput" accept="image/*"  name="images[]" multiple>
                         
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -159,7 +161,8 @@
                                         <label for="imageInput" class="custom-file-upload">
                                             <i class="fa fa-cloud-upload fa-5x"></i>
                                         </label>
-                                        <input class="d-block mx-auto" type="file" id="imageInput" accept="image/*" multiple>
+                                        <input class="d-block mx-auto" type="file" id="imageInput" accept="image/*"  name="images[]" multiple>
+                                        
                                         <div id="imagePreview"></div>
                                     </div>
                                 </div>
