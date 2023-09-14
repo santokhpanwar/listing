@@ -13,12 +13,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Fonts -->
-    <!-- <link rel="dns-prefetch" href="//fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> -->
+    <!-- Fonts -->   
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- slick slider cdn  -->    
 
@@ -53,17 +51,7 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <!-- @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif -->
+                            
                             <a class="btn btn-warning text-white" href="{{route('login')}}"><i class="fa fa-plus" aria-hidden="true"></i> Add Bussiness</a>
                         @else
                             
@@ -113,7 +101,6 @@
     </div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="{{url('/assets/slick/slick.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -127,14 +114,14 @@
                 infinite: true,        
                 speed: 500,           
                 slidesToShow: 5,       
-                slidesToScroll: 3,
+                slidesToScroll: 2,
                 
                 responsive: [
                     {
                     breakpoint: 800,
                         settings: {
                             slidesToShow: 4,
-                            slidesToScroll: 3,
+                            slidesToScroll: 2,
                             infinite: true,
                             dots: true
                         }
@@ -154,11 +141,12 @@
             });
         });
 
-       // tinymce script init
+            // tinymce script init
             tinymce.init({
                 selector: '#mytextarea'
             });
             // tinymce script init
+
             //    days multiple select script
             $(document).ready(function () {
                 $('#days-multiple').select2();
@@ -166,13 +154,15 @@
 
             $(document).ready(function () {
                 $('#opening-time').select2({
-                    placeholder: "Select a Opening Time"
+                    placeholder: "Select a Opening Time",
+                    theme: "classic"
                 });
                 
             });
             $(document).ready(function () {
                 $('#closing-time').select2({
-                    placeholder: "Select a Closing Time"
+                    placeholder: "Select a Closing Time",
+                    theme: "classic"
                 });                
             });
 
@@ -181,7 +171,8 @@
             //    days multiple select script
             $(document).ready(function() {
                 $('#select-category').select2({
-                    placeholder: "Select a Category"
+                    placeholder: "Select a Category",
+                    allowClear: true
 
                 });
                 
@@ -234,9 +225,9 @@
 
                     // Disable or enable Prev/Next buttons based on the current tab
                     if (index === 0) {
-                        prevBtn.style.display = 'none';
+                        prevBtn.style.opacity = '0';
                     } else {
-                        prevBtn.style.display = 'block';
+                        prevBtn.style.opacity = '1';
                     }
 
                     if (index === tabs.length - 1) {

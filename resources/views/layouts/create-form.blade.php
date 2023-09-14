@@ -1,8 +1,8 @@
-<div class="card">
-    <div class="card-header py-3 bg-white">
+<div class="">
+    <!-- <div class=" py-3">
         <h5 class="mb-0">Add Listings</h5>
-    </div>
-    <div class="card-body p-3 bg-white rounded">
+    </div> -->
+    <div class="bg-white rounded">
         <div class="border pt-0 add-listing-form">
             <ul class="nav nav-pills border-bottom nav-justified d-block d-md-flex " id="myTabs">
                 <li class="nav-item">
@@ -15,27 +15,27 @@
                     <a class="nav-link font-bold rounded-0 border border-end-1 border-top-0 border-bottom-0  border-start-0" data-bs-toggle="tab" href="#tab3">Business Info</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-bold rounded-0" data-bs-toggle="tab" href="#tab3">confirmation</a>
+                    <a class="nav-link font-bold rounded-0" data-bs-toggle="tab" href="#tab4">confirmation</a>
                 </li>
             </ul>
 
-            <div class="tab-content mb-0 b-0">
+            <div class="tab-content mb-0 p-3">
                 <div id="tab1" class="tab-pane fade card-body show active">
                     <div class="control-group form-group">
                         <div class="form-group"> 
                             <label class="form-label text-dark">Listing Title</label> 
-                            <input type="text" class="form-control required" placeholder="Add List Name" aria-required="true"> </div>
+                            <input type="text" class="form-control form-control-lg required" placeholder="Add List Name" aria-required="true"> </div>
                         </div>
                         <div class="form-group"> 
                             <label class="form-label text-dark">Description</label> 
-                            <textarea id="mytextarea" class="form-control" name="example-textarea-input" rows="6" placeholder="Description"></textarea> 
+                            <textarea id="mytextarea" class="form-control form-control-lg" name="example-textarea-input" rows="6" placeholder="Description"></textarea> 
                         </div>
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-label text-dark">Category</label> 
-                                    <select id="select-category" class="form-control" multiple="multiple">
+                                    <select id="select-category" class="form-control form-control-lg" multiple="multiple">
                                         <!-- <option value="0" data-select2-id="select2-data-3-9yhx">Select Category</option> -->
                                         <option value="1">RealEstate</option>
                                         <option value="2">Restaurant</option>
@@ -47,13 +47,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                 <label class="form-label text-dark">Phone Number</label> 
-                                <input type="number" class="form-control required" placeholder="Phone Number" aria-required="true"> 
+                                <input type="number" class="form-control form-control-lg required" placeholder="Phone Number" aria-required="true"> 
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                         <label class="form-label text-dark">Opening Days</label> 
-                        <select id="days-multiple" class="form-control " multiple="multiple">
+                        <select id="days-multiple" class="form-control form-control-lg " multiple="multiple">
                             <option value="AllDays" selected="" data-select2-id="select2-data-6-q57z">All Days</option>
                             <option value="Sunday">Sunday</option>
                             <option value="Monday">Monday</option>
@@ -68,7 +68,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label class="form-label text-dark">Opening Time</label> 
-                                <select id="opening-time" class="form-control ">
+                                <select id="opening-time" name="opening_time" class="form-control form-control-lg ">
                                     <option value="12">12am</option>
                                     <option value="1">1am</option>
                                     <option value="2">2am</option>
@@ -100,7 +100,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label class="form-label text-dark">Closing Time</label> 
-                                <select id="closing-time" class="form-control ">
+                                <select id="closing-time" class="form-control form-control-lg ">
                                     <option value="12">12am</option>
                                     <option value="1">1am</option>
                                     <option value="2">2am</option>
@@ -141,7 +141,7 @@
                     </div>
                     <div class="form-group"> 
                         <label class="form-label text-dark">Video Url</label> 
-                        <input type="text" class="form-control" placeholder="Video Url"> 
+                        <input type="text" class="form-control form-control-lg" placeholder="Video Url"> 
                     </div>                        
                 </div>
                 <div id="tab2" class="tab-pane fade card-body border-top-0">
@@ -149,37 +149,37 @@
                         <div class="col-md-4">
                             <div class="form-group"> 
                                 <label class="form-label text-dark">Address</label> 
-                                <input type="text" class="form-control" placeholder="Add List Address"> 
+                                <input type="text" class="form-control form-control-lg" placeholder="Add List Address"> 
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group"> 
                                 <label class="form-label text-dark">Address 2</label> 
-                                <input type="text" class="form-control" placeholder="Add List Address"> 
+                                <input type="text" class="form-control form-control-lg" placeholder="Add List Address"> 
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group"> 
                                 <label class="form-label text-dark">Country</label> 
-                                <input type="text" class="form-control" placeholder="Add List Address"> 
+                                <input type="text" class="form-control form-control-lg" placeholder="Add List Address"> 
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group"> 
                                 <label class="form-label text-dark">State</label> 
-                                <input type="text" class="form-control" placeholder="Add List Address"> 
+                                <input type="text" class="form-control form-control-lg" placeholder="Add List Address"> 
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group"> 
                                 <label class="form-label text-dark">City</label> 
-                                <input type="text" class="form-control" placeholder="Add List Address"> 
+                                <input type="text" class="form-control form-control-lg" placeholder="Add List Address"> 
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group"> 
                                 <label class="form-label text-dark">Zip Code</label> 
-                                <input type="text" class="form-control" placeholder="Add List Address"> 
+                                <input type="text" class="form-control form-control-lg" placeholder="Add List Address"> 
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -191,7 +191,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <select id="established" name="" class="form-control">
+                                <select id="established" name="" class="form-control form-control-lg">
                                     <option value="">Company Established year</option>
                                     <option value="2020">2020</option>
                                     <option value="2019">2019</option>
@@ -202,7 +202,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <!-- <label class="form-label text-dark">Services</label>  -->
-                                <select id="service" class="form-control ">
+                                <select id="service" class="form-control form-control-lg ">
                                     <option>Service</option>
                                     <option value="0">All Categories</option>
                                     <option value="1">Hotels</option>
@@ -213,7 +213,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <select class="form-control ">
+                                <select class="form-control form-control-lg ">
                                     <option value="Iso Certified" selected="" data-select2-id="select2-data-19-jdnt">Iso Certified</option>
                                     <option value="Government">Government</option>
                                 </select>                                    
@@ -221,12 +221,12 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                            <input class="form-control" type="number" placeholder="Fax">
+                            <input class="form-control form-control-lg" type="text" placeholder="Fax">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                            <input class="form-control" type="number" placeholder="Toll Free Number">
+                            <input class="form-control form-control-lg" type="text" placeholder="Toll Free Number">
                             </div>
                         </div>   
                         <div class="col-md-4">
@@ -234,7 +234,7 @@
                                 <div class="input-group-text">
                                     <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-facebook tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
                                 </div>
-                            <input class="form-control" placeholder="Facebook URL" type="text"> 
+                            <input class="form-control form-control-lg" placeholder="Facebook URL" type="text"> 
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -242,7 +242,7 @@
                                 <div class="input-group-text">
                                     <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-twitter tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
                                 </div>
-                            <!-- input-group-text --> <input class="form-control" placeholder="Twitter URL" type="text"> 
+                            <!-- input-group-text --> <input class="form-control form-control-lg" placeholder="Twitter URL" type="text"> 
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -250,7 +250,7 @@
                                 <div class="input-group-text">
                                     <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-linkedin tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
                                 </div>
-                                <input class="form-control" placeholder="Linkedin URL" type="text"> 
+                                <input class="form-control form-control-lg" placeholder="Linkedin URL" type="text"> 
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -258,7 +258,7 @@
                                 <div class="input-group-text">
                                     <div class="input-group-text w-7 p-0 border-0 bg-transparent"> <i class="fa fa-instagram tx-16 lh-0 op-6 text-center mx-auto"></i> </div>
                                 </div>
-                                <input class="form-control" placeholder="Instagram URL" type="text"> 
+                                <input class="form-control form-control-lg" placeholder="Instagram URL" type="text"> 
                             </div>
                         </div>
                     </div>                        
@@ -272,9 +272,9 @@
                         <input type="checkbox" id="terms" class="me-2">
                         <label for="terms">I Agree To Biznesbuzzer <a href="#" class="text-warning">Terms of Service</a></label>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <button type="submit" class="btn btn-light">Submit</button>
-                    </div>
+                    </div> -->
                     
                 </div>
             </div>

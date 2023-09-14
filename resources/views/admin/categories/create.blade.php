@@ -11,24 +11,24 @@
             @endif
             <div class="card">
                 <div class="card-header">
-                    <h4>Add New Category</h4>
+                    <h4>Add New <span class="h6">Add New Category</span></h4>
                 </div>
                 <div class="card-body">
                     <form action="/admin/categories" method="POST">
                         @csrf
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" name="title" class="form-control" placeholder="Category Title" required>
+                                <input type="text" name="title" class="form-control-lg form-control" placeholder="Category Title" required>
                             </div>
                             <div class="col-md-6">
-                                <select name="status" id="" class="form-control">
+                                <select name="status" id="" class="form-control-lg form-control">
                                     <option value="1">Active</option>
                                     <option value="0">Inactive</option>
                                 </select>
 
                             </div>
                             <div class="col-12">
-                                <input type="file" name="image" class="form-control">
+                                <input type="file" name="image" class="form-control-lg form-control">
                             </div>
                             
                             <div class="col-md-12 text-end">

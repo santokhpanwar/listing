@@ -30,7 +30,7 @@
                                  </li>
                                  <li class="list-group-item border-top border border-0 rounded-0">
                                      <a class="text-dark" href="{{url('/user/add-listing')}}">
-                                        <span><i class="bi bi-pencil-square"></i> Add Listing</span>
+                                        <span><i class="bi bi-pencil-square"></i> Add Business</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>
@@ -42,14 +42,17 @@
                                  </li>  
                                  <li class="list-group-item border-top border border-0 rounded-0">
                                     <a class="text-dark active" href="{{url('/user/my-listing')}}">
-                                        <span><i class="bi bi-pencil-square"></i> My Listing</span>
+                                        <span><i class="bi bi-pencil-square"></i> My Business</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>  
                                 
                                 <li class="list-group-item border-top border border-0 rounded-0"> 
                                     <a class="text-dark" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"><i class="bi bi-box-arrow-left"></i><span class="side-menu__label ms-2">Logout</span></a> 
+                                        document.getElementById('logout-form').submit();">
+                                        <i class="bi bi-box-arrow-left"></i>
+                                        <span class="side-menu__label ms-2">Logout</span>
+                                    </a> 
                                 </li> 
                             </ul> 
                         </div> 
@@ -57,19 +60,19 @@
                 </div>
             </div>
             <div class="col-md-9 col-sm-12">
-                <div class="card">
-                    <div class="card-header py-3 bg-white">
-                        <h5 class="mb-0">My Listings</h5>
+                <div class="">
+                    <div class=" py-3 ">
+                        <h5 class="mb-0">My Business</h5>
                     </div>
-                    <div class="card-body p-3 bg-white rounded">
+                    <div class="bg-white rounded">
                         <div class="listing-list">
-                            <table class="table table-bordered  mb-0 border-top">
+                            <table class="table table-bordered align-middle mb-0 border-top">
                                 <thead>
                                     <tr>                                
-                                        <th class="border-bottom-0">Ads Details</th>
-                                        <th class="border-bottom-0">Category</th>
-                                        <th class="border-bottom-0">Status</th>
-                                        <th class="border-bottom-0">Action</th>
+                                        <th class="">Business Details</th>
+                                        <th class="text-center">Category</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -94,12 +97,71 @@
                                         </td>
                                         <td class="text-center">RealEstate</td>
                                         <td class="text-center"> 
-                                            <a class="badge bg-secondary text-center" href="javascript:void(0)">Expired</a> 
+                                            <a class="badge bg-success text-center" href="javascript:void(0)">Active</a> 
                                         </td>
                                         <td class="text-center">  
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
-                                            <a class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
+                                            <a class="btn btn-primary  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
+                                            <a class="btn btn-success btn-sm m-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
+                                            <a class="btn btn-danger  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                            <img src="{{url('/assets/images/placeholder.png')}}" height="50" width="50" alt="img" class="rounded"> 
+                                            <div class="list-body">
+                                                <div class="card-item-desc ms-1">
+                                                    <a class="text-dark" href="javascript:void(0)">
+                                                        <p class="font-weight-semibold2 mb-0">BHK RealEstates Consultancy</p>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="mb- 2 desc">
+                                                    <i class="bi bi-clock"></i> Every day 9am-10pm
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="desc">
+                                                    <i class="bi bi-tag"></i> New York, NY 10012, US-52014
+                                                    </a> 
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">RealEstate</td>
+                                        <td class="text-center"> 
+                                            <a class="badge bg-danger text-center" href="javascript:void(0)">Inactive</a> 
+                                        </td>
+                                        <td class="text-center">  
+                                            <a class="btn btn-primary  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
+                                            <a class="btn btn-success btn-sm m-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
+                                            <a class="btn btn-danger  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                            <img src="{{url('/assets/images/placeholder.png')}}" height="50" width="50" alt="img" class="rounded"> 
+                                            <div class="list-body">
+                                                <div class="card-item-desc ms-1">
+                                                    <a class="text-dark" href="javascript:void(0)">
+                                                        <p class="font-weight-semibold2 mb-0">BHK RealEstates Consultancy</p>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="mb- 2 desc">
+                                                    <i class="bi bi-clock"></i> Every day 9am-10pm
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="desc">
+                                                    <i class="bi bi-tag"></i> New York, NY 10012, US-52014
+                                                    </a> 
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">RealEstate</td>
+                                        <td class="text-center"> 
+                                            <a class="badge bg-success text-center" href="javascript:void(0)">Active</a> 
+                                        </td>
+                                        <td class="text-center">  
+                                            <a class="btn btn-primary  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
+                                            <a class="btn btn-success btn-sm m-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
+                                            <a class="btn btn-danger  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
                                         </td>
                                     </tr>
 
@@ -127,9 +189,9 @@
                                             <a class="badge bg-secondary text-center" href="javascript:void(0)">Expired</a> 
                                         </td>
                                         <td class="text-center">  
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
-                                            <a class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
+                                            <a class="btn btn-primary  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
+                                            <a class="btn btn-success btn-sm m-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
+                                            <a class="btn btn-danger  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
                                         </td>
                                     </tr>
 
@@ -154,104 +216,22 @@
                                         </td>
                                         <td class="text-center">RealEstate</td>
                                         <td class="text-center"> 
-                                            <a class="badge bg-secondary text-center" href="javascript:void(0)">Expired</a> 
+                                            <a class="badge bg-danger text-center" href="javascript:void(0)">Inactive</a> 
                                         </td>
                                         <td class="text-center">  
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
-                                            <a class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
+                                            <a class="btn btn-primary  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
+                                            <a class="btn btn-success btn-sm m-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
+                                            <a class="btn btn-danger  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
                                         </td>
                                     </tr>
 
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                            <img src="{{url('/assets/images/placeholder.png')}}" height="50" width="50" alt="img" class="rounded"> 
-                                            <div class="list-body">
-                                                <div class="card-item-desc ms-1">
-                                                    <a class="text-dark" href="javascript:void(0)">
-                                                        <p class="font-weight-semibold2 mb-0">BHK RealEstates Consultancy</p>
-                                                    </a>
-                                                    <a href="javascript:void(0)" class="mb- 2 desc">
-                                                    <i class="bi bi-clock"></i> Every day 9am-10pm
-                                                    </a>
-                                                    <a href="javascript:void(0)" class="desc">
-                                                    <i class="bi bi-tag"></i> New York, NY 10012, US-52014
-                                                    </a> 
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-center">RealEstate</td>
-                                        <td class="text-center"> 
-                                            <a class="badge bg-secondary text-center" href="javascript:void(0)">Expired</a> 
-                                        </td>
-                                        <td class="text-center">  
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
-                                            <a class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
-                                        </td>
-                                    </tr>
 
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                            <img src="{{url('/assets/images/placeholder.png')}}" height="50" width="50" alt="img" class="rounded"> 
-                                            <div class="list-body">
-                                                <div class="card-item-desc ms-1">
-                                                    <a class="text-dark" href="javascript:void(0)">
-                                                        <p class="font-weight-semibold2 mb-0">BHK RealEstates Consultancy</p>
-                                                    </a>
-                                                    <a href="javascript:void(0)" class="mb- 2 desc">
-                                                    <i class="bi bi-clock"></i> Every day 9am-10pm
-                                                    </a>
-                                                    <a href="javascript:void(0)" class="desc">
-                                                    <i class="bi bi-tag"></i> New York, NY 10012, US-52014
-                                                    </a> 
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-center">RealEstate</td>
-                                        <td class="text-center"> 
-                                            <a class="badge bg-secondary text-center" href="javascript:void(0)">Expired</a> 
-                                        </td>
-                                        <td class="text-center">  
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
-                                            <a class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
-                                        </td>
-                                    </tr>
 
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                            <img src="{{url('/assets/images/placeholder.png')}}" height="50" width="50" alt="img" class="rounded"> 
-                                            <div class="list-body">
-                                                <div class="card-item-desc ms-1">
-                                                    <a class="text-dark" href="javascript:void(0)">
-                                                        <p class="font-weight-semibold2 mb-0">BHK RealEstates Consultancy</p>
-                                                    </a>
-                                                    <a href="javascript:void(0)" class="mb- 2 desc">
-                                                    <i class="bi bi-clock"></i> Every day 9am-10pm
-                                                    </a>
-                                                    <a href="javascript:void(0)" class="desc">
-                                                    <i class="bi bi-tag"></i> New York, NY 10012, US-52014
-                                                    </a> 
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-center">RealEstate</td>
-                                        <td class="text-center"> 
-                                            <a class="badge bg-secondary text-center" href="javascript:void(0)">Expired</a> 
-                                        </td>
-                                        <td class="text-center">  
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
-                                            <a class="btn btn-secondary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="bi bi-trash"></i></a> 
-                                            <a class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
-                                        </td>
-                                    </tr>
+
+
+
+
+                                    
                                 </tbody>
                             </table>
                             <div class="text-center mt-3">

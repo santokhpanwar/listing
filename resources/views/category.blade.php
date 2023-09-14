@@ -459,7 +459,7 @@
                     <div class="list-number">
                       <i class="fa fa-map-marker text-warning"></i> city country
                     </div>
-                    <div class="list-number">
+                    <div class="list-nutext-centermber">
                       <i class="fa fa-phone text-warning"></i> 1234567890
                     </div>
                   </div>
