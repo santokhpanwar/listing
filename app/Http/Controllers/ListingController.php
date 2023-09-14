@@ -49,13 +49,9 @@ class ListingController extends Controller
         $listing = new Listing();
         $listing->title = $request->title;
         $listing->body = $request->body;
-<<<<<<< HEAD
-        $listing->published_at = $request->published_at; 
-=======
         $listing->category = $request->category;
         $listing->published_at = $request->published_at;
 
->>>>>>> 29a9bd554352b0511fa9ec5fc445536932103033
         $listing->save();
 
         // Handle image uploads

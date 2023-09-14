@@ -432,21 +432,9 @@
                                     </div> 
                                                                        
                                 </div>
-<<<<<<< HEAD
-                                <div class="form-group">
-                                    <label class="form-label text-dark">Image Upload</label> 
-                                    <div class="uploader text-center  border rounded m-0 py-4">
-                                        <label for="imageInput" class="custom-file-upload">
-                                            <i class="fa fa-cloud-upload fa-5x"></i>
-                                        </label>
-                                        <input class="d-block mx-auto" type="file" id="imageInput" accept="image/*"  name="images[]" multiple>
-                                        
-                                        <div id="imagePreview"></div>
-=======
                                 <div class="card-footer">
                                     <div class="form-group text-end">
                                         <button type="submit" class="btn btn-warning text-white">Submit</button>
->>>>>>> 29a9bd554352b0511fa9ec5fc445536932103033
                                     </div>
                                 </div>
                                 
