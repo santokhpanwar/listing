@@ -7,8 +7,8 @@
             <div class="card">
                 <form action="/admin/listings" method="post">
                     @csrf  
-                <div class="card-header"><h4>Add New Listing</h4></div>
-                <div class="card-body">
+                    <div class="card-header"><h4>Add New Listing</h4></div>
+                        <div class="card-body">
                         <div class="card mb-3">
                             <div class="card-header bg-white">Overall Information</div>
                             <div class="card-body bg-white">
@@ -282,6 +282,7 @@
                                         <div class="card-header py-3 bg-white">
                                             <h5 class="mb-0">Business Info</h5>
                                         </div>
+                                          
                                         <div class="card-body p-3 bg-white rounded">
                                             <div class="row">
                                                 <div class="col-md-4 mb-2">
@@ -348,7 +349,7 @@
                                                         </p>
                                                     @endif
                                                     </div>
-                                                </div>   
+                                                </div>  
                                                 
                                             </div>
                                         </div>
@@ -440,11 +441,8 @@
                                 
                             </div>
                         </div>
-                    </form>                
-                
-            </div>           
-
-            
+                    </form> 
+            </div>            
         </div>
     </div>
 </div>
