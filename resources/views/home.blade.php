@@ -35,7 +35,7 @@
               <div class="category-item rounded-circle mx-auto">
                <div class="category-img border rounded-circle mx-auto">
                <div class="   rounded-circle ">
-                  <img class="" src="{{url('/assets/images/art-and-entertainment.png')}}" alt="">
+                  <img class="" src="{{url('/images/art-and-entertainment.png')}}" alt="">
                 </div>
               </div>
                </div> 
@@ -55,7 +55,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card text-center px-4 pt-4 mb-5">
-          <i><img class="mb-4"src="{{ url('/assets/images/hand.png') }}" alt="Choose a Category"></i>
+          <i><img class="mb-4"src="{{ url('/images/hand.png') }}" alt="Choose a Category"></i>
           <h4 class="fw-bold">Choose a Category</h4>
             <div class="seperator mb-4"></div>
           <p class="mb-0">Before you begin to prepare your Local Business Listing Submission, it is important to select the correct category for your Business.
@@ -65,7 +65,7 @@
       </div>
       <div class="col-md-4">
         <div class="card text-center px-4 pt-4 mb-5">
-          <i><img class="mb-4"src="{{ url('/assets/images/find.png') }}" alt="Choose a Category"></i>
+          <i><img class="mb-4"src="{{ url('/images/find.png') }}" alt="Choose a Category"></i>
           <h4 class="fw-bold">Find what you want</h4>
             <div class="seperator mb-4"></div>
           <p class="mb-0">Before you begin to prepare your Local Business Listing Submission, it is important to select the correct category for your Business.
@@ -75,7 +75,7 @@
       </div>
       <div class="col-md-4">
         <div class="card text-center px-4 pt-4 mb-5">
-          <i><img class="mb-4"src="{{ url('/assets/images/Explore-Amazing-Places.png') }}" alt="Choose a Category"></i>
+          <i><img class="mb-4"src="{{ url('/images/Explore-Amazing-Places.png') }}" alt="Choose a Category"></i>
           <h4 class="fw-bold">Explore Amazing Places</h4>
             <div class="seperator mb-4"></div>
           <p class="mb-0">Before you begin to prepare your Local Business Listing Submission, it is important to select the correct category for your Business.
