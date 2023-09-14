@@ -135,7 +135,7 @@
                             <label for="imageInput" class="custom-file-upload">
                                 <i class="fa fa-cloud-upload fa-5x"></i>
                             </label>
-                            <input class="d-block mx-auto" type="file" id="imageInput" accept="image/*" multiple>
+                            <input class="d-none mx-auto" type="file" id="imageInput" accept="image/*" multiple>
                             <div id="imagePreview"></div>
                         </div>
                     </div>
@@ -279,7 +279,7 @@
                 </div>
             </div>
 
-            <div class="mt-3 mb-3">
+            <div class="mt-3">
                 <ul class="list-inline wizard mb-0 mt-3 px-5 py-2 bg-light border-top">
                     <li class="previous list-inline-item disabled"><button id="prevBtn" class="btn btn-secondary mb-0">Prev</button> </li>
                     <li class="next list-inline-item float-end"><button id="nextBtn" class="btn btn-warning text-white  mb-0">next</button></li>

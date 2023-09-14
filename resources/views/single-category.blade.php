@@ -2,14 +2,47 @@
  
 @section('content')
 <section class="grid-banner d-flex align-items-center">
-  <div class="container">
-    <!-- <h1 class="text-center text-white font-weight-bold">Business Availlable </h1>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb justify-content-center bg-transparent">
-        <li class="breadcrumb-item"><a class="text-warning" href="#">Home</a></li>
-        <li class="breadcrumb-item text-white">Category Name</li>
-      </ol>
-    </nav> -->
+<div class="container-fluid mt-5">
+       <div class="col-md-8 mx-auto">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="busines-details">
+              <h1 class="text-white">Best SEO Agency in Toronto</h1>
+              <span class="rating-star">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star text-white"></i>
+                    <i class="bi bi-star text-white"></i>
+                </span>
+                <span class="text-white">3.0 (6 reviews) </span>
+                <a class="text-white fw-bold px-2 text-decoration-none btn-outline-warning btn border-0" href="#review">Add a Review</a>
+            </div>
+            <div class="cta-bu">
+              <!-- <button type="button" class="btn btn-success verified"><i class="fas fa-check "></i> Verified</button> -->
+                <form action="#" method="post">
+                  <a href="#" id="claim-btn" type="submit" class="btn btn-warning text-white claim" data-toggle="modal" data-target="#exampleModal">Ownership Claim</a>
+              </form>
+            </div>
+          </div>
+          <div class="row single-banner-details">
+            <div class="col-md-5">
+            <i class="bi bi-geo-alt-fill text-warning"></i>
+            <a class="text-white text-decoration-none" href="#direction"> 2551 Vista Dr #B301  Alaska (AK) Juneau USA </a>
+            </div>
+            <div class="col-md-3">
+            <i class="bi bi-telephone-outbound text-warning"></i>
+              <a class="text-white text-decoration-none" href="tel:888-702-2793"> 888-702-2793</a>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex align-items-center gap-1">
+                <i class="bi bi-envelope-fill text-warning mr-2"></i>
+                <a class="text-white text-decoration-none" href="mailto:support@seorims.com">support@seorims.com</a>
+              </div>
+            </div>
+          </div>
+          
+       </div>
+    </div>
   </div>
 </section>
 
@@ -248,10 +281,7 @@
                                   </div>
                                   <div class="col-8 ps-2 p-0">
                                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                    <div class="rating-star">
-                                      
-                                      <span></span>
-                                    </div>  
+                                     
                                     <div class="list-number">
                                       <i class="fa fa-map-marker text-warning"></i> city country
                                     </div>
@@ -268,10 +298,7 @@
                                   </div>
                                   <div class="col-8 ps-2 p-0">
                                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                    <div class="rating-star">
-                                      
-                                      <span></span>
-                                    </div>  
+                                     
                                     <div class="list-number">
                                       <i class="fa fa-map-marker text-warning"></i> city country
                                     </div>
@@ -288,10 +315,7 @@
                                   </div>
                                   <div class="col-8 ps-2 p-0">
                                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                    <div class="rating-star">
-                                      
-                                      <span></span>
-                                    </div>  
+                                     
                                     <div class="list-number">
                                       <i class="fa fa-map-marker text-warning"></i> city country
                                     </div>
@@ -308,10 +332,7 @@
                                   </div>
                                   <div class="col-8 ps-2 p-0">
                                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                    <div class="rating-star">
-                                      
-                                      <span></span>
-                                    </div>  
+                                     
                                     <div class="list-number">
                                       <i class="fa fa-map-marker text-warning"></i> city country
                                     </div>
@@ -328,10 +349,7 @@
                                   </div>
                                   <div class="col-8 ps-2 p-0">
                                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                    <div class="rating-star">
-                                      
-                                      <span></span>
-                                    </div>  
+                                     
                                     <div class="list-number">
                                       <i class="fa fa-map-marker text-warning"></i> city country
                                     </div>

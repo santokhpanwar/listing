@@ -22,12 +22,40 @@ class ListingController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'body' => 'required',
+            'category' => 'required',
+            'phone_number' => 'required',
+            'weekday' => 'required',
+            'opening_time' => 'required',
+            'closing_time' => 'required',
+            'image' => 'required',
+            'video_url' => 'required',
+            'address' => 'required',
+            'address2' => 'required',
+            'country' => 'required',
+            'state' => 'required',
+            'city' => 'required',
+            'zip_code' => 'required',
+            'estb_year' => 'required',
+            'service' => 'required',
+            'iso_certified' => 'required',
+            'fax_number' => 'required',
+            'toll_free_number' => 'required',
+            'twitter_url' => 'required',
+            'linkedin_url' => 'required',
+            'instagram_url' => 'required'
             ]);
             
         $listing = new Listing();
         $listing->title = $request->title;
         $listing->body = $request->body;
+<<<<<<< HEAD
         $listing->published_at = $request->published_at; 
+=======
+        $listing->category = $request->category;
+        $listing->published_at = $request->published_at;
+
+>>>>>>> 29a9bd554352b0511fa9ec5fc445536932103033
         $listing->save();
 
         // Handle image uploads

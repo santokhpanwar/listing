@@ -37,13 +37,13 @@
                                         <td class="text-center">{{ $Categories->created_at}}</td>
                                         <!-- $status=  -->
                                        @if($Categories->status == '1')
-                                        <td class="text-center text-success">Active</td>
+                                        <td class="text-center text-success"><span class="badge bg-success mb-0">Active</span</td>
                                         @else
-                                        <td class="text-center text-danger">Inactive</td>
+                                        <td class="text-center text-danger"><span class="badge bg-danger mb-0">Inactive</span></td>
                                         @endif
 
                                        
-                                        <td class="text-center d-flex">
+                                        <td class="text-center ">
                                             <a href="/admin/categories/edit" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
                                             <a href="/admin/categories/show" class="btn btn-success btn-sm me-1" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
                                             <form action="/admin/categories/{{$Categories->id}}" method="Categories" class="d-inline">
