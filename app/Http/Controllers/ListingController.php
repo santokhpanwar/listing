@@ -46,9 +46,9 @@ class ListingController extends Controller
         $listing = new Listing();
         $listing->title = $request->title;
         $listing->body = $request->body;
-        $listing->category = $request->category;
+        $listing->category = implode(',',$request->category);
         $listing->phone_number = $request->phone_number;
-        $listing->weekday = $request->weekday;
+        $listing->weekday = implode(',',$request->weekday);
         $listing->opening_time = $request->opening_time;
         $listing->closing_time = $request->closing_time;
         $listing->image = $request->image;
@@ -69,6 +69,7 @@ class ListingController extends Controller
         $listing->linkedin_url = $request->linkedin_url;
         $listing->instagram_url = $request->instagram_url;
         $listing->published_at = $request->published_at;
+        $listing->status = $request->status;
 
         $listing->save();
 

@@ -176,7 +176,7 @@
                                                         <label for="imageInput" class="custom-file-upload">
                                                             <i class="fa fa-cloud-upload fa-5x"></i>
                                                         </label>
-                                                        <input class="d-none mx-auto" name="image" type="file" id="imageInput" accept="image/*" multiple>
+                                                        <input class="d-none mx-auto" name="image" type="file" id="imageInput" accept="image/*">
                                                         <div id="imagePreview"></div>
                                                     </div>
                                                     @if($errors->has('image'))

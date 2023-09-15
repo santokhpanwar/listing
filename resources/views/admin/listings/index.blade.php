@@ -11,7 +11,7 @@
             </div>
             <div class="card-body">
                 <div class="listing-list table-responsive">
-                @if($listings == "")
+                @if($listings)
 
                     <table class="table table-bordered mb-0">
                         <thead class="table-secondary">

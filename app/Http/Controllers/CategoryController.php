@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Categories;
+// use App\Http\Controllers\File;
 
 class CategoryController extends Controller
 {
@@ -24,15 +25,16 @@ class CategoryController extends Controller
         $categories->status = $request->status;
         // $categories->image = $request->image;
         // $categories->published_at = $request->published_at;
-        if ($request->hasFile('image')) { 
-            echo $imagePath = $request->file('image')->store('public/images');
-            $categories->image = $imagePath;
-            }
-            // echo $imagePath;
 
-            // echo "<pre>";
-            // print_r($request->all());
-            // echo "</pre>";
+        $path = storage_path('public/images');
+            
+            $imagePath = $path.'/'.$request->image;
+            $categories->image = $imagePath;
+
+            echo "<pre>";
+            print_r($request->all());
+            echo "</pre>";
+            // die();
          $categories->save();
         return redirect('/admin/categories')->with('success','Listing created successfully!');
     }

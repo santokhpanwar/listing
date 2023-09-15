@@ -356,6 +356,11 @@ ul.usertab-list li {
 }
 /* login-register css end */
 
+  /* admin sidebar */
+  #layoutSidenav_nav .menu{
+    border-bottom: 1px solid gray;
+  }
+
 
 /* footer*/
 footer{
