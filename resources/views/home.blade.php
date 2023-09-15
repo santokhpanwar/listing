@@ -29,6 +29,7 @@
 <section class="category pb-5">
   <div class="container">
     <div class="slider slider-nav">
+      @if($Categories)
     @foreach($Categories as $Categories)
       <div class="slider-item">
            <a href="{{url('/category')}}">
@@ -43,6 +44,9 @@
             </a>
       </div>
       @endforeach
+      @else
+      <h4 class="text-center mt-4 bg-light">No Categories Available</h4>
+      @endif
           
       
     </div>

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Categories;
+use App\Models\Faq;
+use App\Models\Listing;
 
 class HomeController extends Controller
 {
@@ -30,14 +32,16 @@ class HomeController extends Controller
     }
     public function category()
     {   
+        $business = Listing::all();
         $Categories = Categories::all();
-        return view('category', compact('Categories'));
+        return view('category', compact('Categories', 'business'));
     }
 
     public function single_category()
     {   
+        $business = Listing::all();
         $Categories = Categories::all();
-        return view('single-category', compact('Categories'));
+        return view('single-category', compact('Categories', 'business'));
     } 
 
     public function search()
@@ -54,7 +58,8 @@ class HomeController extends Controller
     } 
     public function faq()
     {
-        return view('faq');
+        $faq = Faq::all();
+        return view('faq', compact('faq'));
     } 
     
     public function advertise_with_us()

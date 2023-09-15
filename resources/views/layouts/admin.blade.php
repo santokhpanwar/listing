@@ -109,8 +109,8 @@
                             </a>
                             <div class="collapse" id="collapseuser" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{ route('admin.listings.index') }}"><i class="bi bi-dash-lg me-2"></i> All Users</a>
-                                    <a class="nav-link" href="{{ route('admin.listings.create') }}"><i class="bi bi-dash-lg me-2"></i> Add New</a>
+                                    <a class="nav-link" href="{{ route('admin.users.index') }}"><i class="bi bi-dash-lg me-2"></i> All Users</a>
+                                    <!-- <a class="nav-link" href="{{ route('admin.users.create') }}"><i class="bi bi-dash-lg me-2"></i> Add New</a> -->
                                 </nav>
                             </div>
 
@@ -135,47 +135,14 @@
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a href="#" class="nav-link"><i class="bi bi-dash-lg me-2"></i> About</a>
-                                    <a href="#" class="nav-link"><i class="bi bi-dash-lg me-2"></i> Contact Us</a>
-                                   
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
-                                        <div class="sb-sidenav-collapse-arrow"><i class="bi bi-lock"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="">Login</a>
-                                            <a class="nav-link" href="">Register</a>
-                                            <a class="nav-link" href="">Forgot Password</a>
-                                        </nav>
-                                    </div>
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Error
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="">401 Page</a>
-                                            <a class="nav-link" href="">404 Page</a>
-                                            <a class="nav-link" href="">500 Page</a>
-                                        </nav>
-                                    </div>
                                 </nav>
-                            </div>
-                            <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="">
-                                <div class="sb-nav-link-icon"><i class="bi bi-graph-up-arrow"></i></div>
-                                Charts
-                            </a>
-                            <a class="nav-link" href="">
-                                <div class="sb-nav-link-icon"><i class="bi bi-table"></i></div>
-                                Tables
-                            </a>
+                            </div>                            
                         </div>
                     </div>
 
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as: <span>{{ Auth::user()->name }}</span></div>
-                        Biznessbuzzer
+                        <!-- Biznessbuzzer -->
                     </div>
                 </nav>
             </div>

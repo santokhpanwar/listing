@@ -113,7 +113,7 @@
                 arrows: true,         
                 infinite: true,        
                 speed: 500,           
-                slidesToShow: 5,       
+                slidesToShow: 6,       
                 slidesToScroll: 2,
                 
                 responsive: [

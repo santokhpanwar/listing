@@ -17,33 +17,34 @@
                         <table class="table table-bordered  mb-0 border-top table align-middle">
                             <thead class="table-secondary">
                                 <tr>  
-                                    <th class="border-bottom-0">User ID</th>                              
-                                    <th class="border-bottom-0">Name</th>
-                                    <th class="border-bottom-0">User Type</th>
-                                    <th class="border-bottom-0">Published At</th>
-                                    <th class="border-bottom-0">Created at</th>
-                                    <!-- <th class="border-bottom-0">Status</th> -->
-                                    <th class="border-bottom-0">Action</th>
+                                    <th>ID</th>                              
+                                    <th>Name</th>
+                                    <th class="text-center">Email</th>
+                                    <th class="text-center">User Type</th>
+                                    <th class="text-center">Created at</th>
+                                    <!-- <th>Status</th> -->
+                                    <th class="text-center">Action</th>
                                 </tr>
                             </thead>
-                            <tbody>                            
+                            <tbody>  
+                            @foreach($user as $users)                          
                                 <tr>
-                                    <td>01</td>
+                                    <td>{{ $users->id}}</td>
                                     <td>
                                         <div class="d-flex align-items-center">
                                         <img src="{{url('/assets/images/placeholder.png')}}" height="50" width="50" alt="img" class="rounded"> 
                                         <div class="list-body">
                                             <div class="card-item-desc ms-1">
                                                 <a class="text-dark" href="javascript:void(0)">
-                                                    <p class="font-weight-semibold2 mb-0">User Title</p>
+                                                    <p class="font-weight-semibold2 mb-0">{{ $users->name}}</p>
                                                 </a>                                                
                                             </div>
                                         </div>
                                         </div>
                                     </td>
-                                    <td class="text-center">Admin</td>
-                                    <td class="text-center"></td>
-                                    <td class="text-center"></td>
+                                    <td class="">{{ $users->email}}</td>
+                                    <td class="">{{ $users->type}}</td>
+                                    <td class="text-center">{{ date('Y-m-d', strtotime($users->created_at)) }}</td>
                                     <td class="text-center">  
                                         <a href="" class="btn btn-primary me-1 btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
                                         <a href="" class="btn btn-success btn-sm" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
