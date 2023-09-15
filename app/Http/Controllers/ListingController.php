@@ -40,27 +40,45 @@ class ListingController extends Controller
             'service' => 'required',
             'iso_certified' => 'required',
             'fax_number' => 'required',
-            'toll_free_number' => 'required',
-            'twitter_url' => 'required',
-            'linkedin_url' => 'required',
-            'instagram_url' => 'required'
+            'toll_free_number' => 'required'
             ]);
             
         $listing = new Listing();
         $listing->title = $request->title;
         $listing->body = $request->body;
         $listing->category = $request->category;
+        $listing->phone_number = $request->phone_number;
+        $listing->weekday = $request->weekday;
+        $listing->opening_time = $request->opening_time;
+        $listing->closing_time = $request->closing_time;
+        $listing->image = $request->image;
+        $listing->video_url = $request->video_url;
+        $listing->address = $request->address;
+        $listing->address2 = $request->address2;
+        $listing->country = $request->country;
+        $listing->state = $request->state;
+        $listing->city = $request->city;
+        $listing->zip_code = $request->zip_code;
+        $listing->estb_year = $request->estb_year;
+        $listing->service = $request->service;
+        $listing->iso_certified = $request->iso_certified;
+        $listing->fax_number = $request->fax_number;
+        $listing->toll_free_number = $request->toll_free_number;
+        $listing->facebook_url = $request->facebook_url;
+        $listing->twitter_url = $request->twitter_url;
+        $listing->linkedin_url = $request->linkedin_url;
+        $listing->instagram_url = $request->instagram_url;
         $listing->published_at = $request->published_at;
 
         $listing->save();
 
         // Handle image uploads
-        if ($request->hasFile('images')) {
-            foreach ($request->file('images') as $image) {
-                $imagePath = $image->store('listing_images');
-                $listing->images()->create(['image_path' => $imagePath]);
-            }
-        }
+        // if ($request->hasFile('images')) {
+        //     foreach ($request->file('images') as $image) {
+        //         $imagePath = $image->store('listing_images');
+        //         $listing->images()->create(['image_path' => $imagePath]);
+        //     }
+        // }
 
         return redirect('/admin/listings')->with('success','Listing created successfully!');
     }

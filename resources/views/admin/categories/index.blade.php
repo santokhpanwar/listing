@@ -10,6 +10,8 @@
             </div>
             <div class="card-body">
                 <div class="listing-list table-responsive">
+                @if($Categories)
+
                     <table class="table table-bordered  mb-0 border-top table align-middle">
                         <thead class="table-secondary">
                             <tr>  
@@ -22,6 +24,7 @@
                             </tr>
                         </thead>
                         <tbody>
+
                         @foreach($Categories as $Categories)
                             <tr>
                                 <td class="text-center">{{ $Categories->id }}</td>
@@ -49,6 +52,9 @@
                                 </td>
                             </tr>
                             @endforeach
+                            @else
+                            <h4 class="text-center">No Categories Available!</h4>
+                            @endif
                         
                         </tbody>
                     </table>

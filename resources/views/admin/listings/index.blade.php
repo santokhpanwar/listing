@@ -11,6 +11,8 @@
             </div>
             <div class="card-body">
                 <div class="listing-list table-responsive">
+                @if($listings == "")
+
                     <table class="table table-bordered mb-0">
                         <thead class="table-secondary">
                             <tr>  
@@ -59,6 +61,9 @@
                                 </td>
                             </tr>
                             @endforeach
+                            @else 
+                            <h4 class="text-center">NO Business Available !</h4>
+                            @endif
                         </tbody>
                     </table>
                     <div class="pagination py-3">
