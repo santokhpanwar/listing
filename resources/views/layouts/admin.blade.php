@@ -114,6 +114,18 @@
                                 </nav>
                             </div>
 
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsefaq" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="bi bi-tag"></i></div>
+                                FAQ
+                                <div class="sb-sidenav-collapse-arrow"><i class="bi bi-chevron-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsefaq" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="{{ route('admin.faq.index') }}"><i class="bi bi-dash-lg me-2"></i> All FAQ</a>
+                                    <a class="nav-link" href="{{ route('admin.faq.create') }}"><i class="bi bi-dash-lg me-2"></i> Add New</a>
+                                </nav>
+                            </div>
+
 
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="bi bi-file-earmark"></i></div>
@@ -123,7 +135,6 @@
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a href="#" class="nav-link"><i class="bi bi-dash-lg me-2"></i> About</a>
-                                    <a href="#" class="nav-link"><i class="bi bi-dash-lg me-2"></i> Faq</a>
                                     <a href="#" class="nav-link"><i class="bi bi-dash-lg me-2"></i> Contact Us</a>
                                    
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">

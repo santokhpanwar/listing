@@ -7,6 +7,7 @@ use App\Http\Controllers\ListingController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\FaqController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,4 +54,5 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'user-access:admin']
     Route::resource('/companies', CompanyController::class);
     Route::resource('/categories', CategoryController::class);
     Route::resource('/users', CategoryController::class);
+    Route::resource('/faq', FaqController::class);
 });

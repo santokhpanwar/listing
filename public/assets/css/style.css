@@ -143,6 +143,9 @@ a.active {
     height: 70px;
     border-radius: 50%;
 }
+.recent-view .list-number{
+  font-size: 14px;
+}
 /* Home page Category */
 
 /* See How it Works */

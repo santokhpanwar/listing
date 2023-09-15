@@ -23,7 +23,7 @@
                                     <label class="form-label text-dark">Listing Title</label> 
                                     <input type="text" name="title" class="form-control form-control-lg required" placeholder="List Name" aria-required="true">
                                     @if($errors->has('title'))
-                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                        <p class="help-block text-danger mb-0 p-2">
                                         {{ $errors->first('title') }}
                                         </p>
                                     @endif
@@ -33,7 +33,7 @@
                                     <label class="form-label text-dark">Description</label> 
                                     <textarea id="mytextareaadmin" class="form-control form-control-lg" name="body" rows="10" placeholder="Description"></textarea> 
                                     @if($errors->has('body'))
-                                    <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                    <p class="help-block text-danger mb-0 p-2">
                                         {{ $errors->first('body') }}
 
                                         </p>
@@ -50,7 +50,7 @@
                                                 <option value="4">Travel</option>
                                             </select>
                                             @if($errors->has('category'))
-                                                <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                <p class="help-block text-danger mb-0 p-2">
                                                 {{ $errors->first('category') }}
                                                 </p>
                                             @endif
@@ -61,7 +61,7 @@
                                         <label class="form-label text-dark">Phone Number</label> 
                                         <input type="text" name="phone_number" class="form-control form-control-lg" placeholder="Phone number" aria-required="true"> 
                                         @if($errors->has('phone_number'))
-                                            <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                            <p class="help-block text-danger mb-0 p-2">
                                             {{ $errors->first('phone_number') }}
                                             </p>
                                         @endif
@@ -81,7 +81,7 @@
                                         <option value="Saturday">Saturday</option>
                                     </select>
                                     @if($errors->has('weekday'))
-                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                        <p class="help-block text-danger mb-0 p-2">
                                         {{ $errors->first('weekday') }}
                                         </p>
                                     @endif                                   
@@ -117,7 +117,7 @@
                                                 <option value="24">11pm</option>
                                             </select>
                                             @if($errors->has('opening_time'))
-                                                <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                <p class="help-block text-danger mb-0 p-2">
                                                 {{ $errors->first('opening_time') }}
                                                 </p>
                                             @endif
@@ -153,7 +153,7 @@
                                                 <option value="24">11pm</option>
                                             </select>
                                             @if($errors->has('closing_time'))
-                                                <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                <p class="help-block text-danger mb-0 p-2">
                                                 {{ $errors->first('closing_time') }}
                                                 </p>
                                             @endif
@@ -180,7 +180,7 @@
                                                         <div id="imagePreview"></div>
                                                     </div>
                                                     @if($errors->has('image'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('image') }}
                                                         </p>
                                                     @endif
@@ -189,7 +189,7 @@
                                                     <label class="form-label text-dark">Video Url</label> 
                                                     <input type="text" name="video_url" class="form-control form-control-lg" placeholder="Video URL"> 
                                                     @if($errors->has('video_url'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('video_url') }}
                                                         </p>
                                                     @endif
@@ -209,7 +209,7 @@
                                                     <label class="form-label text-dark">Address</label> 
                                                     <input type="text" name="address" class="form-control form-control-lg" placeholder=" Address"> 
                                                     @if($errors->has('address'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('address') }}
                                                         </p>
                                                     @endif
@@ -220,7 +220,7 @@
                                                     <label class="form-label text-dark">Address 2</label> 
                                                     <input type="text" name="address2" class="form-control form-control-lg" placeholder=" Address"> 
                                                     @if($errors->has('address2'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('address2') }}
                                                         </p>
                                                     @endif
@@ -231,7 +231,7 @@
                                                     <label class="form-label text-dark">Country</label> 
                                                     <input type="text" name="country" class="form-control form-control-lg" placeholder="Country"> 
                                                     @if($errors->has('country'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('country') }}
                                                         </p>
                                                     @endif
@@ -242,7 +242,7 @@
                                                     <label class="form-label text-dark">State</label> 
                                                     <input type="text" name="state" class="form-control form-control-lg" placeholder="State"> 
                                                     @if($errors->has('state'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('state') }}
                                                         </p>
                                                     @endif
@@ -253,7 +253,7 @@
                                                     <label class="form-label text-dark">City</label> 
                                                     <input type="text" name="city" class="form-control form-control-lg" placeholder="City"> 
                                                     @if($errors->has('city'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('city') }}
                                                         </p>
                                                     @endif
@@ -264,7 +264,7 @@
                                                     <label class="form-label text-dark">Zip Code</label> 
                                                     <input type="text" name="zip_code" class="form-control form-control-lg" placeholder="Zip Code"> 
                                                     @if($errors->has('zip_code'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('zip_code') }}
                                                         </p>
                                                     @endif
@@ -292,7 +292,7 @@
                                                         <option value="2018">2018</option>                                       
                                                     </select>
                                                     @if($errors->has('estb_year'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('estb_year') }}
                                                         </p>
                                                     @endif
@@ -309,7 +309,7 @@
                                                         <option value="3">Events</option>
                                                     </select>
                                                     @if($errors->has('service'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('service') }}
                                                         </p>
                                                     @endif
@@ -322,7 +322,7 @@
                                                         <option value="Government">Government</option>
                                                     </select>  
                                                     @if($errors->has('iso_certified'))
-                                                        <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                        <p class="help-block text-danger mb-0 p-2">
                                                         {{ $errors->first('iso_certified') }}
                                                         </p>
                                                     @endif                                  
@@ -332,7 +332,7 @@
                                                 <div class="form-group mb-3 {{ $errors->has('fax_number') ? 'has-error' : '' }}">
                                                 <input class="form-control form-control-lg" name="fax_number" type="text" placeholder="Fax">
                                                 @if($errors->has('fax_number'))
-                                                    <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                    <p class="help-block text-danger mb-0 p-2">
                                                     {{ $errors->first('fax_number') }}
                                                     </p>
                                                 @endif
@@ -342,7 +342,7 @@
                                                 <div class="form-group mb-3 {{ $errors->has('toll_free_number') ? 'has-error' : '' }}">
                                                 <input class="form-control form-control-lg" name="toll_free_number" type="text" placeholder="Toll Free Number">
                                                 @if($errors->has('toll_free_number'))
-                                                    <p class="help-block bg-danger rounded text-white mt-2 p-2">
+                                                    <p class="help-block text-danger mb-0 p-2">
                                                     {{ $errors->first('toll_free_number') }}
                                                     </p>
                                                 @endif
