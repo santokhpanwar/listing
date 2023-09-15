@@ -20,8 +20,8 @@
                             <form action="/admin/listings" method="post">
                                 @csrf                        
                                 <div class="form-group mb-3 {{ $errors->has('title') ? 'has-error' : '' }}"> 
-                                    <label class="form-label text-dark">Listing Title</label> 
-                                    <input type="text" name="title" class="form-control form-control-lg required" placeholder="List Name" aria-required="true">
+                                    <label class="form-label text-dark">Business Title</label> 
+                                    <input type="text" name="title" class="form-control form-control-lg required" placeholder="Business Title" aria-required="true">
                                     @if($errors->has('title'))
                                         <p class="help-block text-danger mb-0 p-2">
                                         {{ $errors->first('title') }}
@@ -30,7 +30,7 @@
                                 </div>
 
                                 <div class="form-group mb-3 {{ $errors->has('body') ? 'has-error' : '' }}"> 
-                                    <label class="form-label text-dark">Description</label> 
+                                    <label class="form-label text-dark">Business Description</label> 
                                     <textarea id="mytextareaadmin" class="form-control form-control-lg" name="body" rows="10" placeholder="Description"></textarea> 
                                     @if($errors->has('body'))
                                     <p class="help-block text-danger mb-0 p-2">

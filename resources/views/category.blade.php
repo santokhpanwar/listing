@@ -39,7 +39,7 @@
                     </div>
                   </div>
                 </div>
-
+                  @foreach($business as $businesses)
                 <div class="list-card card shadow mb-3 p-2 w-100">
                   <div class="row no-gutter align-items-center">
                     <div class="col-md-4 ">                    
@@ -48,7 +48,7 @@
                     <div class="col-md-8">
                       <div class="card-body p-0">
                         <div class="list-content border-bottom px-1 pb-2">
-                          <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="{{url('/single-category')}}">Best SEO Agency in Toronto</a></p>
+                          <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="{{url('/single-category')}}">{{ $businesses->title}}</a></p>
                           <div class="rating-star">
                             <i class="fa fa-star text-warning"></i>
                             <i class="fa fa-star text-warning"></i>
@@ -94,262 +94,7 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="list-card card shadow mb-3 p-2 w-100">
-                  <div class="row no-gutter align-items-center">
-                    <div class="col-md-4 ">                    
-                      <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body p-0">
-                        <div class="list-content border-bottom px-1 pb-2">
-                          <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">Best SEO Agency in Toronto</a></p>
-                          <div class="rating-star">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <span class="ms-2">(0)</span>
-                          </div>
-                                
-                          <div class="list-location d-flex">
-                            <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
-                            
-                          </div>
-                        </div>
-                        <div class="row social-icon mt-2">
-                          <div class="col-md-8">
-                          <div class="social-icon">
-                            <ul class="list-inline mb-0">
-                              <li class="list-inline-item">
-                                <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="tel:" class="btn btn-outline-warning border-dark"><i class="fa fa-phone text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="" target="_blank" class="btn btn-outline-warning border-dark"><i class="fa fa-globe text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="#" class="btn btn-outline-warning border-dark"><i class="fa fa-share-alt text-dark" aria-hidden="true"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          </div>
-                          <div class="col-md-4 d-flex align-items-center justify-content-center">
-                            <div class="direction text-right">
-                              <a class="text-warning text-decoration-none" href="">
-                                <!-- <img src="{{ url('assets/images/direction.png') }}" alt="">  -->
-                                View Details</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="list-card card shadow mb-3 p-2 w-100">
-                  <div class="row no-gutter align-items-center">
-                    <div class="col-md-4 ">                    
-                      <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body p-0">
-                        <div class="list-content border-bottom px-1 pb-2">
-                          <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">Best SEO Agency in Toronto</a></p>
-                          <div class="rating-star">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <span class="ms-2">(0)</span>
-                          </div>
-                                
-                          <div class="list-location d-flex">
-                            <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
-                            
-                          </div>
-                        </div>
-                        <div class="row social-icon mt-2">
-                          <div class="col-md-8">
-                          <div class="social-icon">
-                            <ul class="list-inline mb-0">
-                              <li class="list-inline-item">
-                                <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="tel:" class="btn btn-outline-warning border-dark"><i class="fa fa-phone text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="" target="_blank" class="btn btn-outline-warning border-dark"><i class="fa fa-globe text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="#" class="btn btn-outline-warning border-dark"><i class="fa fa-share-alt text-dark" aria-hidden="true"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          </div>
-                          <div class="col-md-4 d-flex align-items-center justify-content-center">
-                            <div class="direction text-right">
-                              <a class="text-warning text-decoration-none" href="">
-                                <!-- <img src="{{ url('assets/images/direction.png') }}" alt="">  -->
-                                View Details</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="list-card card shadow mb-3 p-2 w-100">
-                  <div class="row no-gutter align-items-center">
-                    <div class="col-md-4 ">                    
-                      <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body p-0">
-                        <div class="list-content border-bottom px-1 pb-2">
-                          <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">Best SEO Agency in Toronto</a></p>
-                          <div class="rating-star">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <span class="ms-2">(0)</span>
-                          </div>
-                                
-                          <div class="list-location d-flex">
-                            <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
-                            
-                          </div>
-                        </div>
-                        <div class="row social-icon mt-2">
-                          <div class="col-md-8">
-                          <div class="social-icon">
-                            <ul class="list-inline mb-0">
-                              <li class="list-inline-item">
-                                <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="tel:" class="btn btn-outline-warning border-dark"><i class="fa fa-phone text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="" target="_blank" class="btn btn-outline-warning border-dark"><i class="fa fa-globe text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="#" class="btn btn-outline-warning border-dark"><i class="fa fa-share-alt text-dark" aria-hidden="true"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          </div>
-                          <div class="col-md-4 d-flex align-items-center justify-content-center">
-                            <div class="direction text-right">
-                              <a class="text-warning text-decoration-none" href="">
-                                <!-- <img src="{{ url('assets/images/direction.png') }}" alt="">  -->
-                                View Details</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="list-card card shadow mb-3 p-2 w-100">
-                  <div class="row no-gutter align-items-center">
-                    <div class="col-md-4 ">                    
-                      <a class="text-dark" href=""><img src="{{ url('/assets/images/placeholder.png') }}" height="150" class="card-img-top  " alt=""></a>            
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body p-0">
-                        <div class="list-content border-bottom px-1 pb-2">
-                          <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">Best SEO Agency in Toronto</a></p>
-                          <div class="rating-star">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <span class="ms-2">(0)</span>
-                          </div>
-                                
-                          <div class="list-location d-flex">
-                            <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt="">2551 Vista Dr #B301 Alaska (AK) Juneau USA</div>
-                            
-                          </div>
-                        </div>
-                        <div class="row social-icon mt-2">
-                          <div class="col-md-8">
-                          <div class="social-icon">
-                            <ul class="list-inline mb-0">
-                              <li class="list-inline-item">
-                                <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="tel:" class="btn btn-outline-warning border-dark"><i class="fa fa-phone text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="" target="_blank" class="btn btn-outline-warning border-dark"><i class="fa fa-globe text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="#" class="btn btn-outline-warning border-dark"><i class="fa fa-share-alt text-dark" aria-hidden="true"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          </div>
-                          <div class="col-md-4 d-flex align-items-center justify-content-center">
-                            <div class="direction text-right">
-                              <a class="text-warning text-decoration-none" href="">
-                                <!-- <img src="{{ url('assets/images/direction.png') }}" alt="">  -->
-                                View Details</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>               
-
-                    <!-- Grid list design -->
-                <!-- <div class="col-md-6 d-flex">
-                  <div class="grid-card card shadow my-3 w-100 position-relative">
-                   
-                    <a class="text-dark p-2" href=""><img height="145" src="{{ url('/assets/images/placeholder.png') }}" class="card-img-top" alt=""></a>
-                     
-                      <div class="card-body p-2">
-                        <div class="list-content text-center">
-                          <p class="mb-0 h5"><a class="text-dark text-decoration-none" href="">List Title</a></p>
-                          
-                          <div class="list-location d-flex">
-                            <div class="mr-1"><img src="{{ url('/assets/images/location.png') }}" alt=""></div>
-                            <span> <i class="fa fa-map-marker text-warning mt-1" aria-hidden="true"></i>      </span>
-                          </div>
-                          <div class="social-icon mt-3 mb-4">
-                            <ul class="list-inline">
-                              <li class="list-inline-item">
-                                <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="tel:" class="btn btn-outline-warning border-dark"><i class="fa fa-phone text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="" target="_blank" class="btn btn-outline-warning border-dark"><i class="fa fa-globe text-dark" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="list-inline-item">
-                                <a href="#" class="btn btn-outline-warning border-dark"><i class="fa fa-share-alt text-dark" aria-hidden="true"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="" class="btn btn-warning text-white b-btn">Continue Reading <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                  </div>
-                </div> -->
+                @endforeach
                 
                 <div class="col-12 my-3">
                   <img class="img-fluid" src="{{ url('/assets/images/Center-ads.jpg') }}" alt="">
@@ -391,8 +136,9 @@
               
               <div class="recent-view shadow p-3 mb-3">
                 <h3 class="fw-600">Most Viewed</h3>
-                <div class="border border-warning w-50"></div>   
-                                
+                <div class="border border-warning w-50"></div>
+
+                @foreach($business as $businesses)
                 <div class="row my-3 m-0 align-items-center">
                   <div class="col-4 p-0">                    
                    <a class="text-dark" href="">
@@ -400,61 +146,7 @@
                   </a>                    
                   </div>
                   <div class="col-8 ps-2 p-0">
-                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                     
-                    <div class="list-number">
-                      <i class="fa fa-map-marker text-warning"></i> city country
-                    </div>
-                    <div class="list-number">
-                      <i class="fa fa-phone text-warning"></i> 1234567890
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="row my-3 m-0 align-items-center">
-                  <div class="col-4 p-0">                    
-                   <a class="text-dark" href="">
-                    <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
-                  </a>                    
-                  </div>
-                  <div class="col-8 ps-2 p-0">
-                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                     
-                    <div class="list-number">
-                      <i class="fa fa-map-marker text-warning"></i> city country
-                    </div>
-                    <div class="list-number">
-                      <i class="fa fa-phone text-warning"></i> 1234567890
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="row my-3 m-0 align-items-center">
-                  <div class="col-4 p-0">                    
-                   <a class="text-dark" href="">
-                    <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
-                  </a>                    
-                  </div>
-                  <div class="col-8 ps-2 p-0">
-                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                     
-                    <div class="list-number">
-                      <i class="fa fa-map-marker text-warning"></i> city country
-                    </div>
-                    <div class="list-number">
-                      <i class="fa fa-phone text-warning"></i> 1234567890
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="row my-3 m-0 align-items-center">
-                  <div class="col-4 p-0">                    
-                   <a class="text-dark" href="">
-                    <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
-                  </a>                    
-                  </div>
-                  <div class="col-8 ps-2 p-0">
-                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
+                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">{{$businesses->title}}</a></p>
                      
                     <div class="list-number">
                       <i class="fa fa-map-marker text-warning"></i> city country
@@ -464,25 +156,7 @@
                     </div>
                   </div>
                 </div>
-                
-                <div class="row my-3 m-0 align-items-center">
-                  <div class="col-4 p-0">                    
-                   <a class="text-dark" href="">
-                    <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
-                  </a>                    
-                  </div>
-                  <div class="col-8 ps-2 p-0">
-                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                     
-                    <div class="list-number">
-                      <i class="fa fa-map-marker text-warning"></i> city country
-                    </div>
-                    <div class="list-number">
-                      <i class="fa fa-phone text-warning"></i> 1234567890
-                    </div>
-                  </div>
-                </div>
-                
+                @endforeach
 
               </div>
            

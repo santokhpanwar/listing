@@ -271,93 +271,28 @@
                             <div class="ads mb-3"><img src="https://bb.astagingsite.com/assets/images/ads1.jpg" alt="ads1" class="img-fluid"></div>
                             <div class="recent-view shadow p-3 mb-3">
                                  <h3 class="fw-600">Most Viewed</h3>
-                                <div class="border border-warning w-50"></div>   
-                                                
-                                <div class="row my-3 m-0 align-items-center">
-                                  <div class="col-4 p-0">                    
-                                  <a class="text-dark" href="">
-                                    <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
-                                  </a>                    
-                                  </div>
-                                  <div class="col-8 ps-2 p-0">
-                                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                     
-                                    <div class="list-number">
-                                      <i class="fa fa-map-marker text-warning"></i> city country
+                                <div class="border border-warning w-50"></div> 
+
+                                @foreach($business as $businesses)
+                                  <div class="row my-3 m-0 align-items-center">
+                                    <div class="col-4 p-0">                    
+                                    <a class="text-dark" href="">
+                                      <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
+                                    </a>                    
                                     </div>
-                                    <div class="list-number">
-                                      <i class="fa fa-phone text-warning"></i> 1234567890
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row my-3 m-0 align-items-center">
-                                  <div class="col-4 p-0">                    
-                                  <a class="text-dark" href="">
-                                    <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
-                                  </a>                    
-                                  </div>
-                                  <div class="col-8 ps-2 p-0">
-                                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                     
-                                    <div class="list-number">
-                                      <i class="fa fa-map-marker text-warning"></i> city country
-                                    </div>
-                                    <div class="list-number">
-                                      <i class="fa fa-phone text-warning"></i> 1234567890
+                                    <div class="col-8 ps-2 p-0">
+                                      <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">{{$businesses->title}}</a></p>
+                                      
+                                      <div class="list-number">
+                                        <i class="fa fa-map-marker text-warning"></i> city country
+                                      </div>
+                                      <div class="list-nutext-centermber">
+                                        <i class="fa fa-phone text-warning"></i> 1234567890
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="row my-3 m-0 align-items-center">
-                                  <div class="col-4 p-0">                    
-                                  <a class="text-dark" href="">
-                                    <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
-                                  </a>                    
-                                  </div>
-                                  <div class="col-8 ps-2 p-0">
-                                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                     
-                                    <div class="list-number">
-                                      <i class="fa fa-map-marker text-warning"></i> city country
-                                    </div>
-                                    <div class="list-number">
-                                      <i class="fa fa-phone text-warning"></i> 1234567890
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row my-3 m-0 align-items-center">
-                                  <div class="col-4 p-0">                    
-                                  <a class="text-dark" href="">
-                                    <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
-                                  </a>                    
-                                  </div>
-                                  <div class="col-8 ps-2 p-0">
-                                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                     
-                                    <div class="list-number">
-                                      <i class="fa fa-map-marker text-warning"></i> city country
-                                    </div>
-                                    <div class="list-number">
-                                      <i class="fa fa-phone text-warning"></i> 1234567890
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row my-3 m-0 align-items-center">
-                                  <div class="col-4 p-0">                    
-                                  <a class="text-dark" href="">
-                                    <img class="w-100 border border-warning" height="70" src="{{ url('/assets/images/placeholder.png') }}" alt="">
-                                  </a>                    
-                                  </div>
-                                  <div class="col-8 ps-2 p-0">
-                                    <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">Best SEO Agency</a></p>
-                                     
-                                    <div class="list-number">
-                                      <i class="fa fa-map-marker text-warning"></i> city country
-                                    </div>
-                                    <div class="list-number">
-                                      <i class="fa fa-phone text-warning"></i> 1234567890
-                                    </div>
-                                  </div>
-                                </div>
+                                  @endforeach
+                               
                                 
                               </div>
 
