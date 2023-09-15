@@ -47,6 +47,7 @@
                         </tbody>
                     </table>
                     <div class="pagination py-3">
+                    {{ $faq->links() }}
                         <ul class="pagination mb-0  mx-auto">
                             <li class="page-item page-prev disabled"> <a class="page-link" href="javascript:void(0)" tabindex="-1"><i class="fa fa-angle-left" aria-hidden="true"></i></a> </li>
                             <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
