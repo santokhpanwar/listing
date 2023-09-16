@@ -71,7 +71,7 @@
                                 <a href="mailto:" class="btn btn-outline-warning  border-dark"><i class="fa fa-envelope text-dark" aria-hidden="true"></i></a>
                               </li>
                               <li class="list-inline-item">
-                                <a href="tel:" class="btn btn-outline-warning border-dark"><i class="fa fa-phone text-dark" aria-hidden="true"></i></a>
+                                <a href="tel:{{$businesses->phone_number}}" class="btn btn-outline-warning border-dark"><i class="fa fa-phone text-dark" aria-hidden="true"></i></a>
                               </li>
                               <li class="list-inline-item">
                                 <a href="" target="_blank" class="btn btn-outline-warning border-dark"><i class="fa fa-globe text-dark" aria-hidden="true"></i></a>
@@ -149,10 +149,10 @@
                     <p class="mb-0 h6"><a href="" class="text-dark text-decoration-none">{{$businesses->title}}</a></p>
                      
                     <div class="list-number">
-                      <i class="fa fa-map-marker text-warning"></i> city country
+                      <i class="fa fa-map-marker text-warning"></i> {{$businesses->city}}, {{$businesses->country}}
                     </div>
                     <div class="list-nutext-centermber">
-                      <i class="fa fa-phone text-warning"></i> 1234567890
+                      <i class="fa fa-phone text-warning"></i> {{$businesses->phone_number}}
                     </div>
                   </div>
                 </div>
