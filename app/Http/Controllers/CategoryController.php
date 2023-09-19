@@ -22,7 +22,7 @@ class CategoryController extends Controller
     {   $request->validate([
         'title' => 'required',
         'status' => 'required'
-        ]);
+        ]); 
 
 
         $categories = new Categories();
