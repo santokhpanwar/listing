@@ -13,7 +13,7 @@
                 <div class="listing-list table-responsive">
                 @if($listings)
 
-                    <table class="table table-bordered mb-0">
+                    <table class="table table-bordered mb-3">
                         <thead class="table-secondary">
                             <tr>  
                                 <th class="text-center">ID</th>                              
@@ -47,7 +47,7 @@
                                     </div>
                                     </div>
                                 </td>
-                                <td class="text-center">Category</td>
+                                <td class="text-center">{{ $listing->category}}</td>
                                 <td class="text-center">{{ date('Y-m-d', strtotime($listing->published_at)) }}</td>
                                 <td class="text-center">Admin</td>
                                 <td class="text-center">  
@@ -66,7 +66,8 @@
                             @endif
                         </tbody>
                     </table>
-                    <div class="pagination py-3">
+                    
+                    <!-- <div class="pagination py-3">
                         <ul class="pagination mb-0  mx-auto">
                             <li class="page-item page-prev disabled"> <a class="page-link" href="javascript:void(0)" tabindex="-1"><i class="fa fa-angle-left" aria-hidden="true"></i></a> </li>
                             <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
@@ -74,8 +75,11 @@
                             <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
                             <li class="page-item page-next"> <a class="page-link" href="javascript:void(0)"><i class="fa fa-angle-right" aria-hidden="true"></i></a> </li>
                         </ul>
-                    </div>                            
+                    </div>                             -->
                 </div>
+            </div>
+            <div class="float-end">
+                {{ $listings->links() }}
             </div>
         </div> 
     </div>

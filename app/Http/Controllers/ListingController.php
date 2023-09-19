@@ -9,7 +9,7 @@ class ListingController extends Controller
 {
     public function index()
     {
-        $listings = Listing::all();
+        $listings = Listing::paginate(4);
         return view('admin.listings.index', compact('listings'));
     }
 
@@ -101,12 +101,12 @@ class ListingController extends Controller
             'body' => 'required',
             ]);
         // Update the item
-    $listing->update([
-        'name' => $request->input('name'),
-        'body' => $request->input('body'),
-        'published_at' => $request->input('published_at'),
-        // Update other fields as needed
-    ]);
+        $listing->update([
+            'name' => $request->input('name'),
+            'body' => $request->input('body'),
+            'published_at' => $request->input('published_at'),
+            // Update other fields as needed
+        ]);
 
     // Handle image uploads
     if ($request->hasFile('images')) {

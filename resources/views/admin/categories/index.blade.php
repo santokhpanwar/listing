@@ -42,7 +42,7 @@
 
                                 
                                 <td class="text-center ">
-                                    <a href="/admin/categories/edit" class="btn btn-primary  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
+                                    <a href="/admin/categories/{{$Categories->id}}/edit" class="btn btn-primary  btn-sm" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="bi bi-pencil"></i></a> 
                                     <a href="/admin/categories/show" class="btn btn-success btn-sm  m-1 me-md-0" data-bs-toggle="tooltip" data-bs-original-title="View"><i class="bi bi-eye"></i></a> 
                                     <form action="/admin/categories/{{$Categories->id}}" method="Categories" class="d-inline">
                                         {{ csrf_field() }}
@@ -58,15 +58,7 @@
                         
                         </tbody>
                     </table>
-                    <div class="pagination py-3">
-                        <ul class="pagination mb-0  mx-auto">
-                            <li class="page-item page-prev disabled"> <a class="page-link" href="javascript:void(0)" tabindex="-1"><i class="fa fa-angle-left" aria-hidden="true"></i></a> </li>
-                            <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                            <li class="page-item page-next"> <a class="page-link" href="javascript:void(0)"><i class="fa fa-angle-right" aria-hidden="true"></i></a> </li>
-                        </ul>
-                    </div>
+                   
                 </div>
             </div>
         </div>

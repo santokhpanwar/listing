@@ -30,7 +30,7 @@
                                  </li>
                                  <li class="list-group-item border-top border border-0 rounded-0">
                                      <a class="text-dark" href="{{url('/user/add-listing')}}">
-                                        <span><i class="bi bi-pencil-square"></i> Add Listing</span>
+                                        <span><i class="bi bi-pencil-square"></i> Add Business</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>
@@ -42,7 +42,7 @@
                                  </li>  
                                  <li class="list-group-item border-top border border-0 rounded-0">
                                     <a class="text-dark" href="{{url('/user/my-listing')}}">
-                                        <span><i class="bi bi-pencil-square"></i> My Listing</span>
+                                        <span><i class="bi bi-pencil-square"></i> My Business</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>  
@@ -137,7 +137,7 @@
                         </div>
                 <div class="row">  
                     <div class="col-md-7">
-                        <div class="mb-3">
+                        <div class="mb-3 border-bottom">
                             <h4>Latest Listing</h4>
                         </div>
                         <div class="list-card card shadow mb-3 p-2 w-100">
@@ -183,8 +183,8 @@
                                     </div>
                                     <div class="col-md-4 d-flex align-items-center justify-content-center">
                                         <div class="direction text-right">
-                                        <a class="text-warning text-decoration-none" href="">
-                                            View Details</a>
+                                        <a class="text-decoration-none btn btn-outline-warning p-0 lh-1" href="">
+                                        <i class="bi bi-arrow-right-short fs-1"></i></a>
                                         </div>
                                     </div>
                                     </div>
@@ -236,8 +236,8 @@
                                     </div>
                                     <div class="col-md-4 d-flex align-items-center justify-content-center">
                                         <div class="direction text-right">
-                                        <a class="text-warning text-decoration-none" href="">
-                                            View Details</a>
+                                        <a class="text-decoration-none btn btn-outline-warning p-0 lh-1" href="">
+                                        <i class="bi bi-arrow-right-short fs-1"></i></a>
                                         </div>
                                     </div>
                                     </div>
@@ -290,8 +290,8 @@
                                     </div>
                                     <div class="col-md-4 d-flex align-items-center justify-content-center">
                                         <div class="direction text-right">
-                                        <a class="text-warning text-decoration-none" href="">
-                                            View Details</a>
+                                        <a class="text-decoration-none btn btn-outline-warning p-0 lh-1" href="">
+                                        <i class="bi bi-arrow-right-short fs-1"></i></a>
                                         </div>
                                     </div>
                                     </div>
@@ -301,7 +301,7 @@
                         </div>
                     </div>
                     <div class="col-md-5">
-                    <div class="mb-3">
+                    <div class="mb-3 border-bottom">
                             <h4>Latest Post</h4>
                         </div>
 

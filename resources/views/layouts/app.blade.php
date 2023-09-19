@@ -259,9 +259,9 @@
                 });
 
                 // Handle Submit button click (You can add form submission logic here)
-                submitBtn.addEventListener('click', function () {
-                    alert('Form submitted!');
-                });
+                // submitBtn.addEventListener('click', function () {
+                //     alert('Form submitted!');
+                // });
             });
                
 

@@ -400,8 +400,8 @@
                                             <label class="form-label text-dark">Status</label> 
 
                                                 <select name="status" id="" class="form-control form-control-lg">
-                                                    <option value="0">Inactive</option>
                                                     <option value="1">Active</option>
+                                                    <option value="0">Inactive</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-6">

@@ -19,7 +19,12 @@ class CategoryController extends Controller
         return view('admin.categories.create');
     }
     public function store(Request $request)
-    {      
+    {   $request->validate([
+        'title' => 'required',
+        'status' => 'required'
+        ]);
+
+
         $categories = new Categories();
         $categories->title = $request->title;
         $categories->status = $request->status;
@@ -41,7 +46,7 @@ class CategoryController extends Controller
 
     public function edit(Categories $Categories)
     {
-        return view('admin.categories.edit', compact('categories'));
+        return view('admin.categories.edit', compact('Categories'));
     }
 
     public function show(Categories $categories)

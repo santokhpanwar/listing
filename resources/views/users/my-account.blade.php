@@ -30,7 +30,7 @@
                                  </li>
                                  <li class="list-group-item border-top border border-0 rounded-0">
                                      <a class="text-dark" href="{{url('/user/add-listing')}}">
-                                        <span><i class="bi bi-pencil-square"></i> Add Listing</span>
+                                        <span><i class="bi bi-pencil-square"></i> Add Business</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>
@@ -42,7 +42,7 @@
                                  </li>  
                                  <li class="list-group-item border-top border border-0 rounded-0">
                                     <a class="text-dark" href="{{url('/user/my-listing')}}">
-                                        <span><i class="bi bi-pencil-square"></i> My Listing</span>
+                                        <span><i class="bi bi-pencil-square"></i> My Business</span>
                                         <i class="angle fa fa-angle-right float-end my-1"></i>
                                     </a>
                                  </li>                                   
